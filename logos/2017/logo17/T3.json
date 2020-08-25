@@ -1,0 +1,51 @@
+{ "height":3,
+ "layers":[
+        {
+         "data":[0, 0, 0, 0, 0, 0, 127, 129, 23],
+         "height":3,
+         "name":"Tile Layer 1",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":3,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "name":"Object Layer 1",
+         "objects":[],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "data":[0, 0, 0, 0, 0, 0, 10, 67, 67],
+         "height":3,
+         "name":"Tile Layer 2",
+         "offsetx":0,
+         "offsety":-64,
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":3,
+         "x":0,
+         "y":0
+        }],
+ "nextobjectid":5,
+ "orientation":"isometric",
+ "renderorder":"right-down",
+ "tiledversion":"1.0.3",
+ "tileheight":64,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "source":"level1_tileset.json"
+        }],
+ "tilewidth":128,
+ "type":"map",
+ "version":1,
+ "width":3
+}
