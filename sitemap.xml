@@ -1,36 +1,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>ordylan.github.io/</loc>
+		<loc>https://ordylan.github.io/</loc>
 		<lastmod>2020-08-31T00:00:00+08:00</lastmod>
 		<changefreq>always</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>ordylan.github.io/ordylan/ordylan_cinema/index.html</loc>
+		<loc>https://ordylan.github.io/ordylan/ordylan_cinema/index.html</loc>
 		<lastmod>2020-08-31T00:00:00+08:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>ordylan.github.io/ordylan/ordylan_article/index.html</loc>
+		<loc>https://ordylan.github.io/ordylan/ordylan_article/index.html</loc>
 		<lastmod>2020-08-31T00:00:00+08:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>ordylan.github.io/ordylan/about/index.html</loc>
+		<loc>https://ordylan.github.io/ordylan/about/index.html</loc>
 		<lastmod>2020-08-31T00:00:00+08:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>ordylan.github.io/ordylan/ordylan_game/index.html</loc>
+		<loc>https://ordylan.github.io/ordylan/ordylan_game/index.html</loc>
 		<lastmod>2020-08-31T00:00:00+08:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>ordylan.github.io/ordylan/ordylan_music/index.html</loc>
+		<loc>https://ordylan.github.io/ordylan/ordylan_music/index.html</loc>
 		<lastmod>2020-08-31T00:00:00+08:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.8</priority>
