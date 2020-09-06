@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
 <script language="javascript" type="text/javascript" src="https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"></script>
 	  <script type="text/javascript">
 
@@ -26,6 +27,16 @@ var $i = $("<span/>").text(a[a_idx]); a_idx = (a_idx + 1) % a.length; var x = e.
 <source src="video/video.mp4" type="video/mp4">
 <p>Your browser doesn't support HTML5 video. Here is a <a href="video/video.mp4">link to the video</a> instead.</p>
 </video>
+	<h1>测试播放器</h1>
+	<div id="message">
+    <iframe src="testplayer/indexmp4.html"
+            height="300"
+            width="700"
+            frameborder="0"
+            scrolling="0"
+    ></iframe>
+</div>
+
 <br>
 <h2><a href="video/video.mp4" download>下载</a></h2>
 </body>
