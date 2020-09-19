@@ -10,7 +10,7 @@
         "wallpaperSlideTime": 1600522089151,
         "wallpaperSlideIndex": 4,
         "openMax": 9,
-        "idCounter": 218,
+        "idCounter": 220,
         "themeColor": "#FF8C00",
         "autoThemeColor": false,
         "wallpapers": [
@@ -290,7 +290,7 @@
                 "bg": "rgb(12,58,138)"
             },
             "openMode": "normal",
-            "plugin": true,
+            "plugin": false,
             "position": {
                 "autoOffset": true,
                 "left": true,
@@ -323,7 +323,7 @@
                 "bg": "rgb(92,57,110)"
             },
             "openMode": "normal",
-            "plugin": true,
+            "plugin": false,
             "position": {
                 "autoOffset": true,
                 "left": true,
@@ -356,7 +356,7 @@
                 "bg": "rgb(3,14,151)"
             },
             "openMode": "normal",
-            "plugin": true,
+            "plugin": false,
             "position": {
                 "autoOffset": true,
                 "left": true,
@@ -389,7 +389,7 @@
                 "bg": "rgb(188,138,39)"
             },
             "openMode": "normal",
-            "plugin": true,
+            "plugin": false,
             "position": {
                 "autoOffset": true,
                 "left": true,
