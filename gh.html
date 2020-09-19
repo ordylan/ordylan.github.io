@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="ordylanlogin.css" type="text/css" >
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<meta charset="utf-8">
+<title>网页加载中</title>
+</head>
+<meta http-equiv="refresh" content="4;url=mainpage/index.html">
+<body>
+	  <div>
+    <h1>欢迎来到橙鸭乐园!</h1>
+     </div>
+		<script>
+		function Processbar(w,h,bc,pc){
+			var w=w;	//长度
+			var h=h;	//宽度
+			var bordc=bc;	//进度条边框
+			var processcolor=pc;//进度条颜色
+			var bar=document.createElement("div");
+			var process=document.createElement("div");
+			this.show=function(){
+				bar.style.width=w;
+				bar.style.height=h;
+				bar.style.border="1px solid "+bordc;
+				bar.style.borderRadius="5px";
+				process.style.width="0px";
+				process.style.height=h;
+				process.style.borderRadius="5px 0 0 5px";
+				process.style.background=processcolor;
+				bar.appendChild(process);
+				document.body.appendChild(bar);
+			}
+			this.process=function(s){
+				//参数s为速度,百分比，填10则为10%
+				var speed=parseInt(w)*s/50;	//每次进行的实际长度
+				var processwidth=process.offsetWidth;//当前进度条的宽度
+				if(processwidth<=bar.offsetWidth-speed){
+					process.style.width=processwidth+speed+"px";
+					}else{
+					process.style.width=w;
+					process.style.borderRadius="20px"
+					return ;
+				}
+			}
+		}
+		var a=new Processbar("400px","20px","#ccc","orange");
+		a.show();
+		setInterval(function(){
+			a.process(1);
+		},100)
+	</script>
+	<style>
+      @-webkit-keyframes fadein {
+        0% {
+            opacity: 0;
+            background-color: #fff;
+        }
+        100% {
+            opacity: 1;
+            background-color:  #fff;
+        }
+      }
+
+      body {
+        -webkit-animation-name: fadein;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: 1; /* 动画只播放一次 */
+      }
+</style>
+</body>
+</html>
