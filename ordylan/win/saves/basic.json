@@ -208,7 +208,7 @@
                 "width": "x*0.8"
             },
             "title": "橙子网主站",
-            "url": "https://ordylan.github.io/mainpage/index.html",
+            "url": "../../mainpage/index.html",
             "customTile": "",
             "urlRandomToken": true
         },
@@ -241,7 +241,7 @@
                 "width": "x*0.8"
             },
             "title": "通知栏",
-            "url": "https://ordylan.github.io/ordylan/message/index.html",
+            "url": "../message/index.html",
             "customTile": "",
             "urlRandomToken": true
         },
@@ -274,7 +274,7 @@
                 "width": "x*0.8"
             },
             "title": "文章",
-            "url": "https://ordylan.github.io/ordylan/ordylan_article/index.html",
+            "url": "../ordylan_article/index.html",
             "customTile": "",
             "urlRandomToken": true
         },
@@ -307,7 +307,7 @@
                 "width": "x*0.8"
             },
             "title": "橙鸭快乐跳",
-            "url": "https://ordylan.github.io/ordylan/ordylan_game/games/o_jump/index.html",
+            "url": "../ordylan_game/games/o_jump/index.html",
             "customTile": "",
             "urlRandomToken": true
         },
@@ -340,7 +340,7 @@
                 "width": "x*0.8"
             },
             "title": "橙子乐滚球",
-            "url": "https://ordylan.github.io/ordylan/ordylan_game/games/ordylan_happy_ball/index.html",
+            "url": "../ordylan_game/games/ordylan_happy_ball/index.html",
             "customTile": "",
             "urlRandomToken": true
         },
@@ -373,7 +373,7 @@
                 "width": "x*0.8"
             },
             "title": "魔法橙学院",
-            "url": "https://ordylan.github.io/ordylan/ordylan_game/games/Magic%20Ordylan%20Academy/index.html",
+            "url": "../ordylan_game/games/Magic%20Ordylan%20Academy/index.html",
             "customTile": "",
             "urlRandomToken": true
         },
@@ -406,7 +406,7 @@
                 "width": "x*0.8"
             },
             "title": "橙鸭快乐跳2",
-            "url": "https://ordylan.github.io/ordylan/ordylan_game/games/o_jump_2/index.html",
+            "url": "../ordylan_game/games/o_jump_2/index.html",
             "customTile": "",
             "urlRandomToken": true
         },
@@ -439,7 +439,8 @@
                 "width": "x*0.8"
             },
             "title": "大雄的月球探险记",
-            "url": "https://uh2jlzqdsfrcn1dnqzmwww-on.drv.tw/ordylan/ordylan_cinema/films/Doraemon2019/index.html",
+            //"url": "../ordylan_cinema/films/Doraemon2019/index.html",
+          "url": "https://uh2jlzqdsfrcn1dnqzmwww-on.drv.tw/ordylan/ordylan_cinema/films/Doraemon2019/index.html",
             "customTile": "",
             "urlRandomToken": true
         },
@@ -472,7 +473,7 @@
                 "width": "x*0.8"
             },
             "title": "橙子主题曲",
-            "url": "https://ordylan.github.io/ordylan/ordylan_music/audios/%E6%A9%99%E5%AD%90%E4%B8%BB%E9%A2%98%E6%9B%B2/index.html",
+            "url": "../ordylan_music/audios/%E6%A9%99%E5%AD%90%E4%B8%BB%E9%A2%98%E6%9B%B2/index.html",
             "customTile": "",
             "urlRandomToken": true
         },
@@ -505,7 +506,7 @@
                 "width": "x*0.8"
             },
             "title": "橙子进行曲",
-            "url": "https://ordylan.github.io/ordylan/ordylan_music/audios/%E6%A9%99%E5%AD%90%E8%BF%9B%E8%A1%8C%E6%9B%B2/index.html",
+            "url": "../ordylan_music/audios/%E6%A9%99%E5%AD%90%E8%BF%9B%E8%A1%8C%E6%9B%B2/index.html",
             "customTile": "",
             "urlRandomToken": true
         },
@@ -538,7 +539,7 @@
                 "width": "x*0.8"
             },
             "title": "快乐地下城",
-            "url": "https://ordylan.github.io/ordylan/ordylan_music/audios/%E5%BF%AB%E4%B9%90%E5%9C%B0%E4%B8%8B%E5%9F%8E/index.html",
+            "url": "../ordylan_music/audios/%E5%BF%AB%E4%B9%90%E5%9C%B0%E4%B8%8B%E5%9F%8E/index.html",
             "customTile": "",
             "urlRandomToken": true
         },
@@ -571,7 +572,7 @@
                 "width": "x*0.8"
             },
             "title": "快乐地下城2",
-            "url": "https://ordylan.github.io/ordylan/ordylan_music/audios/%E5%BF%AB%E4%B9%90%E5%9C%B0%E4%B8%8B%E5%9F%8E2/index.html",
+            "url": "../ordylan_music/audios/%E5%BF%AB%E4%B9%90%E5%9C%B0%E4%B8%8B%E5%9F%8E2/index.html",
             "customTile": "",
             "urlRandomToken": true
         },
@@ -604,7 +605,7 @@
                 "width": "x*0.8"
             },
             "title": "下载全部歌曲",
-            "url": "https://ordylan.github.io/ordylan/ordylan_music/audios/song4.zip",
+            "url": "../ordylan_music/audios/song4.zip",
             "customTile": "",
             "urlRandomToken": true
         },
@@ -637,7 +638,7 @@
                 "width": "x*0.8"
             },
             "title": "关于",
-            "url": "https://ordylan.github.io/ordylan/about/index.html",
+            "url": "../about/index.html",
             "customTile": "",
             "urlRandomToken": true
         },
@@ -670,7 +671,7 @@
                 "width": "100"
             },
             "title": "我的公众号",
-            "url": "https://ordylan.gitee.io/",
+            "url": "gzh.png",
             "customTile": "",
             "urlRandomToken": true
         }
