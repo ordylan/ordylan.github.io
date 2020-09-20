@@ -1,6 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
+ <style> 
+        .black_overlay{ 
+            display: none; 
+            position: absolute; 
+            top: 0%; 
+            left: 0%; 
+            width: 100%; 
+            height: 100%; 
+            background-color: black; 
+            z-index:1001; 
+            -moz-opacity: 0.8; 
+            opacity:.80; 
+            filter: alpha(opacity=88); 
+        } 
+        .white_content { 
+            display: none; 
+            position: absolute; 
+            top: 25%; 
+            left: 25%; 
+            width: 55%; 
+            height: 55%; 
+            padding: 20px; 
+            border: 10px solid orange; 
+            background-color: white; 
+            z-index:1002; 
+            overflow: auto; 
+        } 
+    </style> 
 
 <link rel="stylesheet" href="ordylanlogin.css" type="text/css" >
 
@@ -29,7 +57,7 @@ console.log("此功能专供开发者使用,请不要在此粘贴任何代码!")
   <body>
 	  <div>
     <h1>欢迎来到橙鸭乐园!</h1>
-     
+     <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">繁忙-网页山谷(Github)</a>
 	  
  <select onchange="javascript:location.href=this.value;" style="font-size:30px;">
         <option  disabled selected hidden>————请选择服务器————</option>
@@ -38,6 +66,15 @@ console.log("此功能专供开发者使用,请不要在此粘贴任何代码!")
         <option value="win.html">繁忙-电脑集市(主站电脑版)</option>
 	<option value="ge.html">维护-元素王国(gitee)</option>	 
     </select>
+	<div id="light" class="white_content">
+		<h1>服务器列表</h1>
+		<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">关闭窗口</a>
+		<a href="gh.html">繁忙-网页山谷(Github)</a>
+		<a href="od.html">爆满-代码小镇(Onedrive)</a>
+		<a href="win.html">空闲-电脑集市(主站电脑版)</a>
+		<a href="ge.html">维护-元素王国(gitee)</a>
+</div> 
+        <div id="fade" class="black_overlay"></div> 
 		  <br>
 
 
