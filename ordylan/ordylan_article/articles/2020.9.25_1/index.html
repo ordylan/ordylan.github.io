@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<script language="javascript" type="text/javascript" src="https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"></script>
+	  <script type="text/javascript">
+
+ /* 鼠标特效 */ 
+
+ var a_idx = 0; jQuery(document).ready(function($) { $("body").click(function(e) { var a = new Array("橙子游乐场", "ORDYLAN","橙子歌曲"); 
+
+var $i = $("<span/>").text(a[a_idx]); a_idx = (a_idx + 1) % a.length; var x = e.pageX, y = e.pageY; $i.css({ "z-index": 99, "top": y - 20, "left": x, "position": "absolute", "font-weight": "bold", 
+
+"color": "#ffa500" }); $("body").append($i); $i.animate({ "top": y - 180, "opacity": 0 }, 1500, function() { $i.remove(); }); }); });
+
+ </script>
+
+ <link rel="stylesheet" type="text/css" href="ordylan.css">
+<link rel="shortcut icon" href="image/ico.ico">
+<meta charset="utf-8">
+<title>橙子文章-橙子网1周年啦!</title>
+</head>
+<body>
+<!--1周年彩带-->
+<div class="overlay"></div>
+<script type="text/javascript" src="../../../../mainpage/1year/js/vendors.js"></script>
+<script type="text/javascript" src="../../../../mainpage/1year/js/hahaha.js"></script>
+<!--1周年彩带-->
+
+<h1>橙子网一周年啦!</h1><h3><a href="../../index.html">返回首页</a></h3>
+	<p>哈哈，橙子网终于一周年啦!的背景以及标志都换了，你发现了吗?其中背景是从别的网站爬的，一共有5层防护，全给我破解了哈哈哈。活动来啦，参加橙鸭快乐跳2(iOS不兼容)，挑战你能不能到达聚会。还有魔法橙学院，我10万分，你们可以超过我吗?通过视频，见哔哩哔哩，YouTube(账号ordylan)哦!评论告诉我得分~这次就介绍这么多，下次见!</p>
+<p>链接:</p>
+<a href="../../../../mainpage/index.html">|主页|</a>
+<a href="../../../ordylan_game/games/o_jump_2/index.html">|橙鸭快乐跳2|</a>
+<a href="../../../ordylan_game/games/Magic Ordylan Academy/index.html">|魔法橙学院|</a>
+<a href="https://www.bilibili.com/video/BV1h5411a7kA">|哔哩哔哩|</a>
+	<a href="https://www.youtube.com/watch?v=kv7lHNhCjH8">|YouTube,要翻墙|</a>
+</body>
+</html>
