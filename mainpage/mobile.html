@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script type="text/javascript">  function browserRedirect() {  var sUserAgent= navigator.userAgent.toLowerCase();  var bIsIpad= sUserAgent.match(/ipad/i) == "ipad";  var bIsIphoneOs= sUserAgent.match(/iphone os/i) == "iphone os";  var bIsMidp= sUserAgent.match(/midp/i) == "midp";  var bIsUc7= sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";  var bIsUc= sUserAgent.match(/ucweb/i) == "ucweb";  var bIsAndroid= sUserAgent.match(/android/i) == "android";  var bIsCE= sUserAgent.match(/windows ce/i) == "windows ce";  var bIsWM= sUserAgent.match(/windows mobile/i) == "windows mobile";  if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {  window.location.href= '#';  } else {  window.location= 'index.html';  }  }  browserRedirect();  </script>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
 <script src="https://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
     <meta charset="UTF-8">
@@ -25,7 +26,9 @@
         <a href="../ordylan/ordylan_article/index.html">文章</a>
 		<a href="../ordylan/ordylan_game/index.html">游戏</a>
 		<a href="../ordylan/ordylan_music/index.html">橙子歌曲集</a>
+        <a href="../ordylan/about/index.html">关于我</a>
         <a href="../index.html">|切换服务器|</a>
+
     </div>
 </div>
 <script>
