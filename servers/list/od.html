@@ -19,10 +19,10 @@
         .white_content { 
             display: none; 
             position: absolute; 
-            top: 25%; 
-            left: 25%; 
-            width: 55%; 
-            height: 55%; 
+            top: 20%; 
+            left: 20%; 
+            width: 60%; 
+            height: 60%; 
             padding: 20px; 
             border: 10px solid orange; 
             background-color: white; 
@@ -32,9 +32,9 @@
 
     </style> 
 
-<link rel="stylesheet" href="ordylanlogin.css" type="text/css" >
+<link rel="stylesheet" href="ordylanlogin.css" type="text/css">
+<link rel="stylesheet" href="ordylanloginm.css" type="text/css" media="screen and (max-device-width:1024px) and (orientation:portrait)" >
 
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -72,17 +72,69 @@ console.log("此功能专供开发者使用,请不要在此粘贴任何代码!")
 	<div id="light" class="white_content">
 		<h1>服务器列表</h1>
 		<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">关闭窗口</a>
-		<br>
-		<div style=" border:2px solid #FFA500"><a href="../gh.html">-繁忙-<br>网页山谷<br>(Github)</a></div>
-
-		<div style=" border:2px solid #FFA500"><a href="../od.html">-爆满-<br>代码小镇<br>(Onedrive)</a></div>
-
-		<div style=" border:2px solid #FFA500"><a href="../win.html">-空闲-<br>电脑集市<br>(主站电脑版)</a></div>
-
-		<div style=" border:2px solid #FFA500"><a href="../ge.html">-维护-<br>元素王国<br>(gitee)</a></div>
-
-		<div style=" border:2px solid #FFA500"><a href="../b.html">-下载-<br>注释沼泽<br>(橙子浏览器下载)</a></div>
-		<br>
+		<!-- 新服务器列表-->
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+			}
+			.title{
+				display: flex;
+			}
+			.container{
+				width: 500px;
+				border: 1px solid orange;
+				margin: 100px auto;
+			}
+			.title{
+				display: flex;
+			}
+			.title li{
+				flex: 1;
+				padding: 10px 0;
+				text-align: center;
+			}
+			.title li.active{
+				background-color: #FFA500;
+				color: #FFFFFF;
+			}
+		</style>
+		
+			<div class="container">
+			<ul class="title">
+				<li class="active">推荐服务器</li>
+				
+				<li>主服务器</li>
+				
+				<li>其他服务器</li>
+			</ul>
+			<ul class="content" style="padding: 10px;">
+				<li><div id="s" style=" border:2px solid #FFA500"><a href="../gh.html">-繁忙-<br>网页山谷<br>(Github)</a></div></li>
+				<li style="display: none;">	<div id="s" style=" border:2px solid #FFA500"><a href="../gh.html">-繁忙-<br>网页山谷<br>(Github)</a></div><div id="s" style=" border:2px solid #FFA500"><a href="../od.html">-爆满-<br>代码小镇<br>(Onedrive)</a></div><div id="s" style=" border:2px solid #FFA500"><a href="../ge.html">-维护-<br>元素王国<br>(gitee)</a></div><div id="s" style=" border:2px solid #FFA500"><a href="../iis.html">-内服-<br>优若雪山<br>(IIS)</a></div></li>
+				<li style="display: none;"><div id="s" style=" border:2px solid #FFA500"><a href="../win.html">-空闲-<br>电脑集市<br>(主站电脑版)</a></div><div id="s" style=" border:2px solid #FFA500"><a href="../b.html">-下载-<br>注释沼泽<br>(橙子浏览器下载)</a></div></li>
+			</ul>
+		</div>
+		<script>
+			let title = document.getElementsByClassName('title')[0]
+			let content = document.getElementsByClassName('content')[0]
+			let titlelist = title.children
+			let contentlist = content.children
+			for(let i = 0; i < titlelist.length; i++){
+				let item = titlelist[i];
+				item.onclick = () => {
+					let active = title.getElementsByClassName('active')[0]
+					active.classList.remove('active')
+					item.classList.add("active")
+					
+					
+					for(let j = 0; j < titlelist.length; j++){
+					contentlist[j].style.display = "none"
+					}
+					contentlist[i].style.display = "block"
+				}
+			}
+		</script>
 </div> 
         <div id="fade" class="black_overlay"></div> 
 		  <br>

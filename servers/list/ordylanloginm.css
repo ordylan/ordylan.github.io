@@ -1,7 +1,14 @@
+
 div {
-  font-size:120%; 
+  font-size:200%; 
   text-align: center
 }
+
+div#s {
+  font-size:80%; 
+  text-align: center
+}
+
 p{font-size: 120%}
    a:link {  
    color: #FFBA06;  
