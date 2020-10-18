@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+<script type="text/javascript">
+if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+window.location = "mobile.html"; //可以换成http地址
+}
+</script>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
 <script language="javascript" type="text/javascript" src="https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"></script>
 	  <script type="text/javascript">
@@ -65,7 +69,7 @@ console.log("此功能专供开发者使用,请不要在此粘贴任何代码!")
 <div id="message">
     <iframe src="../ordylan/message/index.html"
             height="300"
-            width="700"
+            width="400"
             frameborder="0"
             scrolling="0"
     ></iframe>
