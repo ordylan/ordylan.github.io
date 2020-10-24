@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script type="text/javascript">//if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {window.location = "m.html"; }
+</script>
+<script language="javascript" type="text/javascript" src="https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"></script>
+	  <script type="text/javascript">
+
+ /* 鼠标特效 */ 
+
+ var a_idx = 0; jQuery(document).ready(function($) { $("body").click(function(e) { var a = new Array("橙子游乐场", "ORDYLAN","橙子歌曲"); 
+
+var $i = $("<span/>").text(a[a_idx]); a_idx = (a_idx + 1) % a.length; var x = e.pageX, y = e.pageY; $i.css({ "z-index": 99, "top": y - 20, "left": x, "position": "absolute", "font-weight": "bold", 
+
+"color": "#ffa500" }); $("body").append($i); $i.animate({ "top": y - 180, "opacity": 0 }, 1500, function() { $i.remove(); }); }); });
+
+ </script>
+
+    <meta charset="utf-8">
+    <title>橙子网_4.0庆典活动</title>
+    <link rel="stylesheet" type="text/css" href="ordylan.css">
+
+
+
+  </head> 
+
+  <body>
+	  <a href="../../../index.html">返回首页</a>
+	  <br>
+  <img src="map.png" width="1236" height="519" alt="地图加载失败"/>
+
+       <a href="didian/1.html"><img src="dibiao.png"alt="活动1" style="position:absolute;left:20px;top:260px;"/></a>
+	   <a href="didian/2.html"><img src="dibiao.png"alt="活动2" style="position:absolute;left:300px;top:90px;"/></a>
+	   <a href="didian/3/3.html"><img src="dibiao.png"alt="活动3" style="position:absolute;left:600px;top:260px;"/></a>
+	   <a href="didian/4.html"><img src="dibiao.png"alt="活动4" style="position:absolute;left:910px;top:90px;"/></a>
+<p>欢迎来到橙子网4.0狂欢庆典!点击上面的地标进行快乐游玩吧!</p><a href="../../../ordylan/ordylan_article/articles/2020.10.18_1/index.html"><p>|介绍|</p></a>
+
+  </body>
+</html>
+
+

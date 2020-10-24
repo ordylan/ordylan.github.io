@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<script language="javascript" type="text/javascript" src="https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"></script>
+	  <script type="text/javascript">
+
+ /* 鼠标特效 */ 
+
+ var a_idx = 0; jQuery(document).ready(function($) { $("body").click(function(e) { var a = new Array("橙子游乐场", "ORDYLAN","橙子歌曲"); 
+
+var $i = $("<span/>").text(a[a_idx]); a_idx = (a_idx + 1) % a.length; var x = e.pageX, y = e.pageY; $i.css({ "z-index": 99, "top": y - 20, "left": x, "position": "absolute", "font-weight": "bold", 
+
+"color": "#ffa500" }); $("body").append($i); $i.animate({ "top": y - 180, "opacity": 0 }, 1500, function() { $i.remove(); }); }); });
+
+ </script>
+
+    <meta charset="utf-8">
+    <title>橙子网_4.0庆典活动_2</title>
+    <link rel="stylesheet" type="text/css" href="ordylan.css">
+
+
+
+  </head> 
+
+  <body>
+	  <a href="../index.html">返回庆典</a>
+	  <br>
+<iframe src='https://ks.wjx.top/jq/94281286,i,t.aspx?width=760&source=iframe' width='799' height='800' frameborder='0' style='overflow:auto'></iframe>
+  
+
+  </body>
+</html>
+
+
