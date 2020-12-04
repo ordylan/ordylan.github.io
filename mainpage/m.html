@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script type="text/javascript">  function browserRedirect() {  var sUserAgent= navigator.userAgent.toLowerCase();  var bIsIpad= sUserAgent.match(/ipad/i) == "ipad";  var bIsIphoneOs= sUserAgent.match(/iphone os/i) == "iphone os";  var bIsMidp= sUserAgent.match(/midp/i) == "midp";  var bIsUc7= sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";  var bIsUc= sUserAgent.match(/ucweb/i) == "ucweb";  var bIsAndroid= sUserAgent.match(/android/i) == "android";  var bIsCE= sUserAgent.match(/windows ce/i) == "windows ce";  var bIsWM= sUserAgent.match(/windows mobile/i) == "windows mobile";  if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {  window.location.href= '#';  } else {  window.location= 'index.html';  }  }  browserRedirect();  </script>
+ <body>
+
+        <SCRIPT LANGUAGE="JavaScript">
+            function password() 
+            {
+                var testV = 1;
+                var pass1 = prompt('请输入密码来管理乐园:','');
+                while (testV < 3) 
+                {
+                    if (!pass1)
+                    history.go(-1);
+                    if (pass1 == "123456789") 
+                    {
+                        alert('密码正确!');
+                        break;
+                    }
+                    testV+=1;
+                    var pass1 =
+                    prompt('密码错误!请重新输入:');
+                }
+                if (pass1!="password" & testV ==3)
+                history.go(-1);
+                return " ";
+            }
+            document.write(password());
+        </SCRIPT>
+
+
+
+<link rel="stylesheet" href="ordylanlogin.css" type="text/css">
+
+    <meta charset="utf-8">
+    <title>橙子网管理后台</title>
+  </head> 
+
+  <body>
+	  
+    <div><h1>错误,手机不能管理乐园!</h1>
+ <a href="../../index.html">退出</a></div>
+	  
+
+
+
+
+  </body>
+</html>
+   
