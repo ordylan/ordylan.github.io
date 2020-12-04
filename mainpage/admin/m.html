@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-<script type="text/javascript">
-if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-window.location = "m.html"; //可以换成http地址
-}
-</script>
+<script type="text/javascript">  function browserRedirect() {  var sUserAgent= navigator.userAgent.toLowerCase();  var bIsIpad= sUserAgent.match(/ipad/i) == "ipad";  var bIsIphoneOs= sUserAgent.match(/iphone os/i) == "iphone os";  var bIsMidp= sUserAgent.match(/midp/i) == "midp";  var bIsUc7= sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";  var bIsUc= sUserAgent.match(/ucweb/i) == "ucweb";  var bIsAndroid= sUserAgent.match(/android/i) == "android";  var bIsCE= sUserAgent.match(/windows ce/i) == "windows ce";  var bIsWM= sUserAgent.match(/windows mobile/i) == "windows mobile";  if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {  window.location.href= '#';  } else {  window.location= 'index.html';  }  }  browserRedirect();  </script>
  <body>
 
         <SCRIPT LANGUAGE="JavaScript">
@@ -39,29 +35,15 @@ window.location = "m.html"; //可以换成http地址
 
     <meta charset="utf-8">
     <title>橙子网管理后台</title>
-
-
+  </head> 
 
   <body>
 	  
-    <div><h1>欢迎来到橙子网管理后台!</h1>
+    <div><h1>错误,手机不能管理乐园!</h1>
  <a href="../../index.html">退出</a></div>
 	  
-<script>
-            function black(){
-                window.open ("https://github.com/ordylan/ordylan.github.io", "github管理", "height=800, width=800, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no")
-            }
-        </script>
 
-   <input type="button"  onclick="black()" value="github管理">
 
-<script>
-            function black1(){
-                window.open ("https://ordylan-my.sharepoint.com/personal/ordylan_ordylan_onmicrosoft_com/", "onedrive管理", "height=800, width=800, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no")
-            }
-        </script>
-
-   <input type="button"  onclick="black1()" value="onedrive管理">
 
 
   </body>
