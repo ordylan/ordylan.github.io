@@ -1,0 +1,79 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<script language="javascript" type="text/javascript" src="https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"></script>
+	  <script type="text/javascript">
+
+ /* 鼠标特效 */ 
+
+ var a_idx = 0; jQuery(document).ready(function($) { $("body").click(function(e) { var a = new Array("橙子游乐场", "ORDYLAN","橙子歌曲"); 
+
+var $i = $("<span/>").text(a[a_idx]); a_idx = (a_idx + 1) % a.length; var x = e.pageX, y = e.pageY; $i.css({ "z-index": 99, "top": y - 20, "left": x, "position": "absolute", "font-weight": "bold", 
+
+"color": "#ffa500" }); $("body").append($i); $i.animate({ "top": y - 180, "opacity": 0 }, 1500, function() { $i.remove(); }); }); });
+
+ </script>
+
+	<!--网页返回顶部1开始-->
+<link rel="stylesheet" href="css/style.css">
+<!--网页返回顶部1结束-->
+<link rel="shortcut icon" href="image/ico.ico">
+<meta charset="utf-8">
+<title>橙子!!修改!!_ordylan</title>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+<ul>
+<li><a href="index.html"><img src="image/logo.png" width="230" height="80" alt="ordylan_橙子网_张庭阁制作"></a></li>
+<li><h1><a href="../ordylan_cinema/index.html">橙子电影院</a></h1></li>
+<li><h1><a href="../ordylan_article/index.html">文章</a></h1></li>
+<li><h1><a href="../ordylan_game/index.html">游戏</a></h1></li>
+<li><h3><a href="../../index.html">返回首页</a></h3></li>
+</ul>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>   
+
+<ul>
+  <li><a href="#"><h1>张庭阁制作!</h1></a></li>
+   <li><a href="../about/index.html"><h2>关于我</h2></a></li>
+</ul>   
+</body>
+</html>
