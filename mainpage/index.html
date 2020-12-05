@@ -3,144 +3,108 @@
   <head>
 <script type="text/javascript">
 if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-window.location = "m.html"; //可以换成http地址
+window.location = "mobile.html"; //可以换成http地址
 }
 </script>
- <body>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<script language="javascript" type="text/javascript" src="https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"></script>
+	  <script type="text/javascript">
 
-        <SCRIPT LANGUAGE="JavaScript">
-            function password() 
-            {
-                var testV = 1;
-                var pass1 = prompt('请输入密码来管理乐园:','');
-                while (testV < 3) 
-                {
-                    if (!pass1)
-                    history.go(-1);
-                    if (pass1 == "123456789") 
-                    {
-                        alert('密码正确!');
-                        break;
-                    }
-                    testV+=1;
-                    var pass1 =
-                    prompt('密码错误!请重新输入:');
-                }
-                if (pass1!="password" & testV ==3)
-                history.go(-1);
-                return " ";
-            }
-            document.write(password());
-        </SCRIPT>
+ /* 鼠标特效 */ 
 
+ var a_idx = 0; jQuery(document).ready(function($) { $("body").click(function(e) { var a = new Array("橙子游乐场", "ORDYLAN","橙子歌曲"); 
 
+var $i = $("<span/>").text(a[a_idx]); a_idx = (a_idx + 1) % a.length; var x = e.pageX, y = e.pageY; $i.css({ "z-index": 99, "top": y - 20, "left": x, "position": "absolute", "font-weight": "bold", 
 
-<link rel="stylesheet" href="ordylanlogin.css" type="text/css">
+"color": "#ffa500" }); $("body").append($i); $i.animate({ "top": y - 180, "opacity": 0 }, 1500, function() { $i.remove(); }); }); });
 
+ </script>
+
+<!--网页返回顶部1开始-->
+<link rel="stylesheet" href="css/style.css">
+<!--网页返回顶部1结束-->
+<script type="text/javascript">
+console.log("%c橙鸭:看我干啥!告诉你↓"," text-shadow: 0 1px 0 #ccc,0 2px 0 #c9c9c9,0 3px 0 #bbb,0 4px 0 #b9b9b9,0 5px 0 #aaa,0 6px 1px rgba(0,0,0,.1),0 0 5px rgba(0,0,0,.1),0 1px 3px rgba(0,0,0,.3),0 3px 5px rgba(0,0,0,.2),0 5px 10px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.2),0 20px 20px rgba(0,0,0,.15);font-size:5em")
+console.log("此功能专供开发者使用,请不要在此粘贴任何代码!")
+</script>
+<link rel="shortcut icon" href="image/ico.ico">
     <meta charset="utf-8">
-    <title>橙子网管理后台</title>
+    <title>橙子网_ordylan</title>
+    <link rel="stylesheet" type="text/css" href="ordylan.css">
 
 
+
+  <script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?ecee3ae7c3d79d2324688ed651f923f2";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></head> 
 
   <body>
-	  
-    <div><h1>欢迎来到&#91;橙子网管理后台&#93;&#33;</h1>
- <a href="../../index.html">退出</a></div>
-	  <div id="main" style=" border:2px solid #FFA500">
-		  <h3>总控制</h3>
-<script>
-            function github(){
-                window.open ("https://github.com/ordylan/ordylan.github.io", "github管理", "height=600, width=800, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no")
-            }
-        </script>
 
-   <input type="button"  onclick="github()" value="github管理">
 
-<script>
-            function onedrive(){
-                window.open ("https://ordylan-my.sharepoint.com/personal/ordylan_ordylan_onmicrosoft_com/", "onedrive管理", "height=600, width=800, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no")
-            }
-        </script>
-   <input type="button"  onclick="onedrive()" value="onedrive管理">
+<!--升级-->
+<!--<script language='javascript'>document.location = 'errors/update.html'</script>-->
+<!--升级-->
+<!--网页返回顶部2开始-->
+<a href="#" class="scroll-to-top"></a><script src='js/jquery.min.js'></script>
+<script src="js/index.js"></script>
+<!--网页返回顶部2结束-->
+    <header class="top">
+      <a href="index.html">
+           <!--<img id="headerLogo"
+           src="image/logo.png" alt="ordylan_橙子网_张庭阁制作"></a>-->
+           <img id="headerLogo"
+           src="image/logo1year.svg" alt="ORDYLAN_橙子网_1周年!!!"></a>
+
+    </header>
+
+	<nav>
+	<ul>
+		<li class="selected"><a href="index.html">主页</a></li>
+		<li><a href="../ordylan/ordylan_cinema/index.html">橙子电影院</a></li>
+		<li><a href="../ordylan/ordylan_article/index.html">文章</a></li>
+		<li><a href="../ordylan/ordylan_game/index.html">游戏</a></li>
+        <li><a href="../ordylan/ordylan_music/index.html">橙子歌曲集</a></li>
+		<li><a href="../index.html">|切换服务器|</a></li>
+	</ul>
+	</nav>
+
+<div id="message">
+    <iframe src="../ordylan/message/index.html"
+            height="300"
+            width="400"
+            frameborder="0"
+            scrolling="0"
+    ></iframe>
 </div>
 
 	  
-	   <div id="other" style=" border:2px solid #FFA500">
-		  <h3>其他页面快速编辑</h3>
-<script>
-            function githubm(){
-                window.open ("https://github.com/ordylan/ordylan.github.io/tree/master/mainpage", "GH主页管理", "height=600, width=800, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no")
-            }
-        </script>
+    <footer>
+     <a href="../ordylan/about/index.html"><h2>关于我</h2></a>
+     
+    </footer>
+	<style>
+      @-webkit-keyframes fadein {
+        0% {
+            opacity: 0;
+            background-color: #fff;
+        }
+        100% {
+            opacity: 1;
+            background-color:  #fff;
+        }
+      }
 
-   <input type="button"  onclick="githubm()" value="GH主页管理">
-
-<script>
-            function onedrivem(){
-                window.open ("https://ordylan-my.sharepoint.com/personal/ordylan_ordylan_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fordylan%5Fordylan%5Fonmicrosoft%5Fcom%2FDocuments%2Fmainpage", "OD主页管理", "height=600, width=800, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no")
-            }
-        </script>
-   <input type="button"  onclick="onedrivem()" value="OD主页管理">
-		   
-		   
-		   <script>
-            function githubt(){
-                window.open ("https://github.com/ordylan/ordylan.github.io/tree/master/ordylan/message", "GH通知管理", "height=600, width=800, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no")
-            }
-        </script>
-
-   <input type="button"  onclick="githubt()" value="GH通知管理">
-
-<script>
-            function onedrivet(){
-                window.open ("https://ordylan-my.sharepoint.com/personal/ordylan_ordylan_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fordylan%5Fordylan%5Fonmicrosoft%5Fcom%2FDocuments%2Fordylan%2Fmessage", "OD通知管理", "height=600, width=800, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no")
-            }
-        </script>
-   <input type="button"  onclick="onedrivet()" value="OD通知管理">
-		   
-		   		   <script>
-            function githubl(){
-                window.open ("https://github.com/ordylan/ordylan.github.io/tree/master/ordylan", "GH栏目管理", "height=600, width=800, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no")
-            }
-        </script>
-
-   <input type="button"  onclick="githubl()" value="GH栏目管理">
-
-<script>
-            function onedrivel(){
-                window.open ("https://ordylan-my.sharepoint.com/personal/ordylan_ordylan_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fordylan%5Fordylan%5Fonmicrosoft%5Fcom%2FDocuments%2Fordylan", "OD栏目管理", "height=600, width=800, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no")
-            }
-        </script>
-   <input type="button"  onclick="onedrivel()" value="OD栏目管理">
-		   
-		   
-		   	   		   <script>
-            function githubm(){
-                window.open ("https://github.com/ordylan/ordylan.github.io/tree/master/!%E6%A8%A1%E6%9D%BF", "模板查看GH服务器", "height=600, width=800, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no")
-            }
-        </script>
-
-   <input type="button"  onclick="githubm()" value="模板查看GH服务器">
-
-<script>
-            function onedrivem(){
-                window.open ("https://ordylan-my.sharepoint.com/personal/ordylan_ordylan_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fordylan%5Fordylan%5Fonmicrosoft%5Fcom%2FDocuments%2F%21%E6%A8%A1%E6%9D%BF", "模板查看OD服务器", "height=600, width=800, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no")
-            }
-        </script>
-   <input type="button"  onclick="onedrivem()" value="模板查看OD服务器">
-		 
-</div>
-	   <div id="other" style=" border:2px solid #FFA500">
-		  <h3>其他标签</h3>
-		   
-
-	  		   <script>
-            function onedrivem(){
-                window.open ("https://ordylan-my.sharepoint.com/personal/ordylan_ordylan_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fordylan%5Fordylan%5Fonmicrosoft%5Fcom%2FDocuments%2F%21%E5%85%B1%E4%BA%AB", "OD共享", "height=600, width=800, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no")
-            }
-        </script>
-   <input type="button"  onclick="onedrivem()" value="OD共享">
-		 </div>
+      body {
+        -webkit-animation-name: fadein;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: 1; /* 动画只播放一次 */
+      }
+</style>
+<!--1周年彩带-->
+<div class="overlay"></div>
+<script type="text/javascript" src="1year/js/vendors.js"></script>
+<script type="text/javascript" src="1year/js/hahaha.js"></script>
+<!--1周年彩带-->
   </body>
 </html>
-   
+
+
