@@ -16,9 +16,6 @@ var $i = $("<span/>").text(a[a_idx]); a_idx = (a_idx + 1) % a.length; var x = e.
 
  </script>
 	
-
-
-</h2></body>
 <script type="text/javascript">
 	window.onload = function(){
 		var time = 10;
@@ -28,7 +25,7 @@ var $i = $("<span/>").text(a[a_idx]); a_idx = (a_idx + 1) % a.length; var x = e.
 			time--;
 			if(time==0){
 				clearInterval(timer);
-				location.href="../mainpage/index.html";
+				location.href="../index.html";
 			}
 				
 		},1000);
@@ -51,19 +48,14 @@ var $i = $("<span/>").text(a[a_idx]); a_idx = (a_idx + 1) % a.length; var x = e.
 <script src="js/index.js"></script>
 <!--网页返回顶部2结束-->
 <h1>橙子网更新完成</h1>
-<span style="color:orange" id="second">10</span>秒后前往主页，如不前往点击<a href="../mainpage/index.html">这里</a>!
+<span style="color:orange" id="second">10</span>秒后前往主页，如不前往点击<a href="../index.html">这里</a>!
 
-<h2>更新内容:</h2>
-	 <h2> <b>文章大升级</b></h2><h2>
-	  <p>题记——2020.12.8橙子网升级</p>
-<p style="font-size:20px">文章大升级,故事有合集;
-<br>考纯与橙鸭,故事续集来;
-<br>其他小故事,已经发出来;
-<br>升级要一天,来日晚上来!</p>
-  
-
-
-  </body>
+  <!--每页一句--> 
+ <style> 
+ #text {border: 1px solid #FA9150;width: 300px;background: #FEF1E9;color: #000000;line-height: 50px;text-align: center;font-size: 14px;font-weight: bold;}
+</style><script>function mrc() {var butong_net = new Array('每页一句:橙子网欢迎您','每页一句:每次加载文字都会变哦','每页一句:公众号橙子游乐场','每页一句:橙子游戏欢迎玩','每页一句:祝你天天开心','每页一句:橙鸭故事超好玩'); var butong_net2 = Math.floor(Math.random() * butong_net.length); var text = document.getElementById("text");text.firstChild.nodeValue = butong_net[butong_net2];}window.onload = mrc;</script>
+<p id="text">引导句</p>
+</body>
 </html>
 
 
