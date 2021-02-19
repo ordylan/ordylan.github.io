@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-<!--彩蛋画-->
-<script type="text/javascript" src="/js/log.js"></script>
+
 <script>
 var _hmt = _hmt || [];
 (function() {
@@ -12,57 +11,43 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
+
+<!--彩蛋画-->
+<script type="text/javascript" src="/js/log.js"></script>
+<!--跳手机-->
 <script type="text/javascript">
 if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-window.location = "mobile.html"; //可以换成http地址
-}
+window.location = "mobile.html";}
 </script>
+<!--自适应，没有啥用-->
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<!--jquery好多地方有用-->
 <script language="javascript" type="text/javascript" src="https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"></script>
-	  <script type="text/javascript">
-
- /* 鼠标特效 */ 
-
+ <script type="text/javascript">
+ /* 鼠标特效，可以出现好多字 */ 
  var a_idx = 0; jQuery(document).ready(function($) { $("body").click(function(e) { var a = new Array("橙子游乐场", "ORDYLAN","橙子歌曲"); 
-
-var $i = $("<span/>").text(a[a_idx]); a_idx = (a_idx + 1) % a.length; var x = e.pageX, y = e.pageY; $i.css({ "z-index": 99, "top": y - 20, "left": x, "position": "absolute", "font-weight": "bold", 
-
-"color": "#ffa500" }); $("body").append($i); $i.animate({ "top": y - 180, "opacity": 0 }, 1500, function() { $i.remove(); }); }); });
-
+var $i = $("<span/>").text(a[a_idx]); a_idx = (a_idx + 1) % a.length; var x = e.pageX, y = e.pageY; $i.css({ "z-index": 99, "top": y - 20, "left": x, "position": "absolute", "font-weight": "bold", "color": "#ffa500" }); $("body").append($i); $i.animate({ "top": y - 180, "opacity": 0 }, 1500, function() { $i.remove(); }); }); });
  </script>
-
-<!--网页返回顶部1开始-->
-<link rel="stylesheet" href="css/style.css">
-<!--网页返回顶部1结束-->
-
-<link rel="shortcut icon" href="image/ico.ico">
+<!--编码utf-8-->	  
     <meta charset="utf-8">
-    <title>橙子网_ordylan</title>
-    <link rel="stylesheet" type="text/css" href="ordylan.css">
-
-
-
+<!--可以看到的标题-->
+    <title>橙子网_橙鸭乐园</title>
+<!--css样式-->
+    <link rel="stylesheet" type="text/css" href="ordylan_new.css">
   </head> 
 
   <body>
-
-
-<!--升级-->
-<!--<script language='javascript'>document.location = 'errors/update.html'</script>-->
-<!--升级-->
-<!--网页返回顶部2开始-->
-<a href="#" class="scroll-to-top"></a><script src='js/jquery.min.js'></script>
-<script src="js/index.js"></script>
-<!--网页返回顶部2结束-->
-    <header class="top">
-      <a href="index.html">
-           <!--<img id="headerLogo"
-           src="image/logo.svg" alt="ordylan_橙子网_张庭阁制作"></a>-->
-           <img id="headerLogo"
-           src="image/logo1year.svg" alt="ORDYLAN_橙子网_1周年!!!"></a>
-
-    </header>
-
+<!--头图-->
+ <header class="top">
+<!--点了可以刷新的a标签--> 
+<a href="index.html">
+<!--正常logo-->
+<img id="headerLogo" src="image/logo.svg" alt="ordylan_橙子网_张庭阁制作"></a>
+<!--1周年logo-->
+<!--<img id="headerLogo" src="image/logo1year.svg" alt="ORDYLAN_橙子网_1周年!!!">-->
+</a>
+</header>
+<!--一大堆标签-->
 	<nav>
 	<ul>
 		<li class="selected"><a href="index.html">主页</a></li>
@@ -70,25 +55,100 @@ var $i = $("<span/>").text(a[a_idx]); a_idx = (a_idx + 1) % a.length; var x = e.
 		<li><a href="../ordylan/ordylan_article/index.html">文章</a></li>
 		<li><a href="../ordylan/ordylan_game/index.html">游戏</a></li>
         <li><a href="../ordylan/ordylan_music/index.html">橙子歌曲集</a></li>
-<li><a href="../index.html">|切换服务器|</a></li>
+		<li><a href="../index.html">|切换服务器|</a></li>
 	</ul>
 	</nav>
-
+<!--3个栏目-->
+	<div id="tableContainer">
+	<div id="tableRow">
+		
+		
+		
+<!--栏目1，有30%-->
+<section id="massage">
+<!--通知-->
+<div id="l1"><h1 style="color:#000">栏目1的名字</h1></div>
+<!--嵌页面-->	
 <div id="message">
     <iframe src="../ordylan/message/index.html"
-            height="300"
-            width="400"
+            height="666"
+            width="420"
             frameborder="0"
             scrolling="0"
     ></iframe>
 </div>
+</section>
+		
+		
+		
+<!--栏目2-->
+<section id="main">
+<div id="l2"><h1>栏目2的名字</h1></div>
+<!--文章-->	
+	
+<a href="#" id="pu1"><div id="a">
+<h1 style="color:#000" id="p1">这是一个文章的标题-&#91;标签名字&#93;</h1>
+<p id="pm1">#文章描述内容##文章描述内容##文章描述内容##文章描述内容##文章描述内容##文章描述内容#</p>	
+</div></a>
+<hr style="border-style: solid;border-width: 5px 0 0;border-color: rgba(0,0,0,0.1);-webkit-transform-origin: 0 0;-webkit-transform: scale(1, 0.5);transform-origin: 0 0;transform: scale(1, 0.5);">
+	
+<a href="#" id="pu2"><div id="a">
+<h1 style="color:#000" id="p2">这是一个文章的标题-&#91;标签名字&#93;</h1>
+<p id="pm2">#文章描述内容##文章描述内容##文章描述内容##文章描述内容##文章描述内容##文章描述内容#</p>	
+</div></a>
+<hr style="border-style: solid;border-width: 5px 0 0;border-color: rgba(0,0,0,0.1);-webkit-transform-origin: 0 0;-webkit-transform: scale(1, 0.5);transform-origin: 0 0;transform: scale(1, 0.5);">
 
+<a href="#" id="pu3"><div id="a">
+<h1 style="color:#000" id="p3">这是一个文章的标题-&#91;标签名字&#93;</h1>
+<p id="pm3">#文章描述内容##文章描述内容##文章描述内容##文章描述内容##文章描述内容##文章描述内容#</p>	
+</div></a>
+<hr style="border-style: solid;border-width: 5px 0 0;border-color: rgba(0,0,0,0.1);-webkit-transform-origin: 0 0;-webkit-transform: scale(1, 0.5);transform-origin: 0 0;transform: scale(1, 0.5);">
+
+<a href="#" id="pu4"><div id="a">
+<h1 style="color:#000" id="p4">这是一个文章的标题-&#91;标签名字&#93;</h1>
+<p id="pm4">#文章描述内容##文章描述内容##文章描述内容##文章描述内容##文章描述内容##文章描述内容#</p>	
+</div></a>
+<hr style="border-style: solid;border-width: 5px 0 0;border-color: rgba(0,0,0,0.1);-webkit-transform-origin: 0 0;-webkit-transform: scale(1, 0.5);transform-origin: 0 0;transform: scale(1, 0.5);">
+
+	
+</section>
+		
+		
+		
+		
+<!--栏目3-->
+<aside>                  
+<div id="l3"><h1>栏目3的名字</h1></div>
+<!--游戏-->	
+<a href="#" id="gu1"><div id="a">
+<h1 style="color:#000" id="g1">游戏名称名称名称</h1>
+<img id="gi1" src="#" alt="图片描述内容"></a>
+<p id="gm1">游戏介绍游戏介绍游戏介绍游戏介绍游戏介绍游戏介绍游戏介绍游戏介绍</p>	
+</div></a>
+<hr style="border-style: solid;border-width: 5px 0 0;border-color: rgba(0,0,0,0.1);-webkit-transform-origin: 0 0;-webkit-transform: scale(1, 0.5);transform-origin: 0 0;transform: scale(1, 0.5);">
+
+<a href="#" id="gu2"><div id="a">
+<h1 style="color:#000" id="g2">游戏名称名称名称</h1>
+<img id="gi2" src="#" alt="图片描述内容"></a>
+<p id="gm2">游戏介绍游戏介绍游戏介绍游戏介绍游戏介绍游戏介绍游戏介绍游戏介绍</p>	
+</div></a>
+<hr style="border-style: solid;border-width: 5px 0 0;border-color: rgba(0,0,0,0.1);-webkit-transform-origin: 0 0;-webkit-transform: scale(1, 0.5);transform-origin: 0 0;transform: scale(1, 0.5);">
+
+	
+<a href="#" id="gu3"><div id="a">
+<h1 style="color:#000" id="g3">游戏名称名称名称</h1>
+<img id="gi3" src="#" alt="图片描述内容"></a>
+<p id="gm3">游戏介绍游戏介绍游戏介绍游戏介绍游戏介绍游戏介绍游戏介绍游戏介绍</p>	
+</div></a>
+<hr style="border-style: solid;border-width: 5px 0 0;border-color: rgba(0,0,0,0.1);-webkit-transform-origin: 0 0;-webkit-transform: scale(1, 0.5);transform-origin: 0 0;transform: scale(1, 0.5);">
+	
+</aside>
+</div>
+</div>
 	  
-    <footer>
-     <a href="../ordylan/about/index.html"><h2>关于我</h2></a>
-     
-    </footer>
-	<style>
+	  
+<!-- 淡入的动画 -->	  
+<style>
       @-webkit-keyframes fadein {
         0% {
             opacity: 0;
@@ -107,19 +167,28 @@ var $i = $("<span/>").text(a[a_idx]); a_idx = (a_idx + 1) % a.length; var x = e.
         -webkit-animation-iteration-count: 1; /* 动画只播放一次 */
       }
 </style>
-<!--1周年彩带-->
-<div class="overlay"></div>
+<!-- 页脚，关于 -->
+    <footer>
+<a href="../ordylan/about/index.html"><h2>关于我</h2></a>
+<!-- 一条来自公众号的line -->
+<hr style="border-style: solid;border-width: 5px 0 0;border-color: rgba(0,0,0,0.1);-webkit-transform-origin: 0 0;-webkit-transform: scale(1, 0.5);transform-origin: 0 0;transform: scale(1, 0.5);">
+Copyright &copy; ORDYLAN
+
+</footer>
+<!--1周年彩带，现在已经不用-->
+<!--1<div class="overlay"></div>
 <script type="text/javascript" src="1year/js/vendors.js"></script>
-<script type="text/javascript" src="1year/js/hahaha.js"></script>
-<!--1周年彩带-->
-  
+<script type="text/javascript" src="1year/js/hahaha.js"></script>-->
 <!--每页一句--> 
  <style> 
  .text2 {text-align:center;}
 #text  {border: 1px solid #FA9150;width: 300px;background: #FEF1E9;color: #000000;line-height: 50px;text-align: center;font-size: 14px;font-weight: bold;}
 </style><script>function mrc() {var butong_net = new Array('每页一句:橙子网欢迎您','每页一句:橙子歌曲有创意','每页一句:每次加载文字都会变哦','每页一句:微信公众号:橙子游乐场','每页一句:橙子游戏欢迎玩','每页一句:祝你天天开心','每页一句:祝你成绩好好','每页一句:橙鸭故事欢迎阅读'); var butong_net2 = Math.floor(Math.random() * butong_net.length); var text = document.getElementById("text");text.firstChild.nodeValue = butong_net[butong_net2];}window.onload = mrc;</script>
 <div id="text2"><p id="text">每页一句加载中...</p></div>
-</body>
+<!--paper专用-->
+<!--<script type="text/javascript" src="paper.js"></script>-->
+
+  </body>
 </html>
 
 
