@@ -5,6 +5,10 @@ cd 1\网页\ordylan-github服\
 cd ~/.ssh
 ls
 ssh-keygen -t rsa -C "ordylan@outlook.com"
+
+
+
+
 ____________________________bash__________________________↑
 git init
 git remote add origin https://github.com/ordylan/ordylan.github.io.git
@@ -13,6 +17,7 @@ git clone https://github.com/ordylan/ordylan.github.io.git
 
 git remote rm origin
 git remote add origin git@github.com:ordylan/ordylan.github.io.git
+
 _____________________________cmd__________________________↑
 
 cd H:\1\网页\ordylan-github服\ordylan.github.io
@@ -22,3 +27,5 @@ git remote add origin https://github.com/ordylan/ordylan.github.io.git
 git add .
 git commit -m "message"
 git push origin master
+
+_____________________________后面一直用的__________________________↑

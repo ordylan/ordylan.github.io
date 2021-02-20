@@ -4,7 +4,20 @@ body {
   margin:           0px;
 }
 
+#menu{
+  width:screen.availWidth;
+  margin:0px auto;
+  position:fixed;/*固定作用*/
+  top:0px;
+  left:0px;
+  /*ie6下样式，加下划线表示只针对ie6 的hack */
+  _position:absolute;/* 把导航栏位置定义为绝对位置  关键*/
+  _top:expression(documentElement.scrollTop + "px"); /* 把导航栏位置放在浏览器垂直滚动条的顶端  关键 */
+  z-index:9999; /* 让导航栏浮在网页的高层位置，遇到flash和图片时候也能始终保持最外层 */
+  text-align:left;
+}
 
+div#nono{   font-size:300%;}
 
 header.top {
   background-color: #ff9a00;
@@ -17,7 +30,7 @@ header.top img#headerSlogan {
 }
 
 nav {
-    background-color: #efe5d0;
+    background-color: #FA7600;
 	margin: 10px 10px 0px 10px;
 }
 nav ul {
@@ -110,7 +123,7 @@ a:visited {
 
 /* BELOW a above to override for nav */
 nav ul li a:link, nav ul li a:visited {
-	color: #954b4b;
+	color: #00AEFF;
 	border-bottom: none;
 	font-weight: bold;
 
@@ -131,7 +144,7 @@ article span {
 
 
 nav {
-    background-color: #efe5d0;
+    background-color: #00BCFF;
 	margin: 10px 10px 0px 10px;
 }
 nav ul {
@@ -144,7 +157,7 @@ nav ul li {
 	padding: 5px 10px 5px 10px;
 }
 nav ul li a:link, nav ul li a:visited {
-	color: #954b4b;
+	color: #A7FF00;
 	border-bottom: none;
 	font-weight: bold;
 
@@ -154,7 +167,7 @@ nav ul li a:link, nav ul li a:visited {
 */
 }
 nav ul li.selected {
-	background-color: #c8b99c;
+	background-color: #FF9400;
 }
 
 div#l1,div#l2,div#l3 {
@@ -162,6 +175,4 @@ text-align : center;
 font-size:250%;
 }
 
-div#a {
-font-size:95%
-}
+
