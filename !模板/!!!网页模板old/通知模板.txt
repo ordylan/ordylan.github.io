@@ -1,3 +1,0 @@
-<img src="image/xxxxxxxxxxxx.png" width="350" height="100" alt="xxxxxxxxxxxxxxxx"/>
-<h3><a href="XXXXXXX target="_blank"">xxxxxxxxxxxxxxxxxxxx</a></h3>
-<p>-------------------------------------------------</p>
