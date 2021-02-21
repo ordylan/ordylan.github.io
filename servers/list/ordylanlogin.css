@@ -1,0 +1,22 @@
+div {
+  font-size:130%; 
+  text-align: center
+}
+p{font-size: 120%}
+   a:link {  
+   color: #FFBA06;  
+   text-decoration: none;  
+   }  
+   a:visited {  
+   text-decoration: none;  
+   color: #FFBA06;  
+   }  
+   a:hover {  
+   text-decoration: none;  
+   color: #FFBA06; 
+	   font-weight:bold
+   }  
+   a:active {  
+   text-decoration: none;  
+   color: #FFBA06;  
+   }  

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--彩蛋画-->
+<script type="text/javascript" src="/js/log.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ecee3ae7c3d79d2324688ed651f923f2";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script type="text/javascript">  function browserRedirect() {  var sUserAgent= navigator.userAgent.toLowerCase();  var bIsIpad= sUserAgent.match(/ipad/i) == "ipad";  var bIsIphoneOs= sUserAgent.match(/iphone os/i) == "iphone os";  var bIsMidp= sUserAgent.match(/midp/i) == "midp";  var bIsUc7= sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";  var bIsUc= sUserAgent.match(/ucweb/i) == "ucweb";  var bIsAndroid= sUserAgent.match(/android/i) == "android";  var bIsCE= sUserAgent.match(/windows ce/i) == "windows ce";  var bIsWM= sUserAgent.match(/windows mobile/i) == "windows mobile";  if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {  window.location.href= '#';  } else {  window.location= 'index.html';  }  }  browserRedirect();  </script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<script src="https://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>橙子电影院手机版</title>
+    <link href="../../mainpage/1.css" rel="stylesheet" type="text/css"/>
+ <script language="javascript" type="text/javascript" src="https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"></script>
+	  <script type="text/javascript">
+
+ /* 鼠标特效 */ 
+
+ var a_idx = 0; jQuery(document).ready(function($) { $("body").click(function(e) { var a = new Array("橙子游乐场", "ORDYLAN","橙子歌曲"); 
+
+var $i = $("<span/>").text(a[a_idx]); a_idx = (a_idx + 1) % a.length; var x = e.pageX, y = e.pageY; $i.css({ "z-index": 99, "top": y - 20, "left": x, "position": "absolute", "font-weight": "bold", 
+
+"color": "#ffa500" }); $("body").append($i); $i.animate({ "top": y - 180, "opacity": 0 }, 1500, function() { $i.remove(); }); }); });
+
+ </script>
+</head>
+<body>
+<br>
+<br>
+
+  <img id="headerLogo"
+           src="image/logo.png" alt="橙子电影院_ordylan">
+
+
+
+    <div class="inner-header">
+        <!--两条横线菜单-->
+        <div class="inner-header-icon inner-header-icon-out"><span></span><span></span><span></span></div>
+    </div>
+    <!--菜单展开项-->
+    <div class="inner-nav">
+	    <a href="../../mainpage/index.html">首页</a>
+        <a href="../ordylan_cinema/index.html">橙子电影院</a>
+        <a href="../ordylan_article/index.html">文章</a>
+		<a href="../ordylan_game/index.html">游戏</a>
+		<a href="../ordylan_music/index.html">橙子歌曲集</a>
+        <a href="../about/index.html">关于我</a>
+        <a href="../../index.html">|切换服务器|</a>
+
+    </div>
+</div>
+<script>
+    $(window).load(function () {
+        $(".inner-header-icon").click(function(){//点击菜单按钮事件
+            $(this).toggleClass("inner-header-icon-click inner-header-icon-out");
+            $(".inner-nav").slideToggle(250);
+        });
+        $(".inner-nav").click(function () {//点击菜单列表项，收回菜单
+            $(".inner-header-icon").click();//触发菜单按钮点击事件
+        });
+        $(".nner-nav a").each(function( index ) {
+            $( this ).css({'animation-delay': (index/10)+'s'});
+        });
+    });
+</script>
+	 <h1>本站电影服务已经暂停，感谢支持!</h1>
+	<!--<a href="https://uh2jlzqdsfrcn1dnqzmwww-on.drv.tw/ordylan/ordylan_cinema/">下面没有传文件，点击我去看电影，站点服务器在美国，很卡，请耐心等待，建议下载下来看</a><br><br><br
+<a href="films/Doraemon2019/index.html"><img src="image/Doraemon2019.jpg" width="200" height="300" alt="Doraemon2019大雄的月球探险记"><br>Doraemon2019大雄的月球探险记</a><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布日期:2019.8.27</em>-->
+
+
+
+
+
+
+<!--每页一句--> 
+ <style> 
+ .text2 {text-align:center;}
+#text  {border: 1px solid #FA9150;width: 300px;background: #FEF1E9;color: #000000;line-height: 50px;text-align: center;font-size: 14px;font-weight: bold;}
+</style><script>function mrc() {var butong_net = new Array('每页一句:橙子网欢迎您','每页一句:橙子歌曲有创意','每页一句:每次加载文字都会变哦','每页一句:微信公众号:橙子游乐场','每页一句:橙子游戏欢迎玩','每页一句:祝你天天开心','每页一句:祝你成绩好好','每页一句:橙鸭故事欢迎阅读'); var butong_net2 = Math.floor(Math.random() * butong_net.length); var text = document.getElementById("text");text.firstChild.nodeValue = butong_net[butong_net2];}window.onload = mrc;</script>
+<div id="text2"><p id="text">每页一句加载中...</p></div>
+</body>
+</html>

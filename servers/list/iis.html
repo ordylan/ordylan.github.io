@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!--彩蛋画-->
+<script type="text/javascript" src="/js/log.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ecee3ae7c3d79d2324688ed651f923f2";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+ <style> 
+        .black_overlay{ 
+            display: none; 
+            position: absolute; 
+            top: 0%; 
+            left: 0%; 
+            width: 100%; 
+            height: 100%; 
+            background-color: black; 
+            z-index:1001; 
+            -moz-opacity: 0.8; 
+            opacity:.80; 
+            filter: alpha(opacity=88); 
+        } 
+        .white_content { 
+            display: none; 
+            position: absolute; 
+            top: 20%; 
+            left: 20%; 
+            width: 60%; 
+            height: 60%; 
+            padding: 20px; 
+            border: 10px solid orange; 
+            background-color: white; 
+            z-index:1002; 
+            overflow: auto; 
+        } 
+
+    </style> 
+
+<link rel="stylesheet" href="ordylanlogin.css" type="text/css">
+<link rel="stylesheet" href="ordylanloginm.css" type="text/css" media="screen and (max-device-width:1024px) and (orientation:portrait)" >
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://ordylan.github.io",
+      "logo": "https://ordylan.github.io/mainpage/image/logo.png"
+    }
+    </script>
+<meta name="baidu-site-verification" content="as1UaycGio" />
+<meta name="google-site-verification" content="kmYdJQb_21LSNukp2Cm8yw9qCigHCdiHNKoJUD8dtlA" />
+<meta name="360-site-verification" content="083a2ed06b3b83c247cb24e71caf595d" />
+
+
+
+    <meta charset="utf-8">
+    <title>橙子网_橙鸭乐园</title>
+  </head> 
+
+  <body>
+	  <div>
+    <h1>欢迎来到橙鸭乐园!</h1>
+     <div style=" border:3px solid #FFA500">
+<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">内服-优若雪山(IIS)|更换服务器</a> </div>
+	  
+ <!--<select onchange="javascript:location.href=this.value;" style="font-size:30px;">-->
+       <!-- <option  disabled selected hidden>————请选择服务器————</option>-->
+       <!-- <option value="gh.html">繁忙-网页山谷(Github)</option>-->
+       <!-- <option value="od.html">爆满-代码小镇(Onedrive)</option>-->
+      <!--  <option value="win.html">繁忙-电脑集市(主站电脑版)</option>-->
+	<!--<option value="ge.html">维护-元素王国(gitee)</option>	--> 
+   <!-- </select>-->
+	<div id="light" class="white_content">
+		<h1>服务器列表</h1>
+		<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">关闭窗口</a>
+<!-- 新服务器列表-->
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+			}
+			.title{
+				display: flex;
+			}
+			.container{
+				width: 500px;
+				border: 1px solid orange;
+				margin: 100px auto;
+			}
+			.title{
+				display: flex;
+			}
+			.title li{
+				flex: 1;
+				padding: 10px 0;
+				text-align: center;
+			}
+			.title li.active{
+				background-color: #FFA500;
+				color: #FFFFFF;
+			}
+		</style>
+		
+			<div class="container">
+			<ul class="title">
+				<li class="active">内服1</li>
+				
+				<li>主服务器</li>
+				
+				<li>其他服务器</li>
+			</ul>
+			<ul class="content" style="padding: 10px;">
+				<li><div id="s" style=" border:2px solid #FFA500"><a href="../gh.html">-繁忙-<br>网页山谷<br>(Github)</a></div></li>
+				<li style="display: none;">	<div id="s" style=" border:2px solid #FFA500"><a href="../gh.html">-繁忙-<br>网页山谷<br>(Github)</a></div><div id="s" style=" border:2px solid #FFA500"><a href="../od.html">-爆满-<br>代码小镇<br>(Onedrive)</a></div><div id="s" style=" border:2px solid #FFA500"><a href="../ge.html">-维护-<br>元素王国<br>(gitee)</a></div><div id="s" style=" border:2px solid #FFA500"><a href="../iis.html">-内服-<br>优若雪山<br>(IIS)</a></div></li>
+				<li style="display: none;"><div id="s" style=" border:2px solid #FFA500"><a href="../win.html">-空闲-<br>电脑集市<br>(主站电脑版)</a></div><div id="s" style=" border:2px solid #FFA500"><a href="../b.html">-下载-<br>注释沼泽<br>(橙子浏览器下载)</a></div></li>
+			</ul>
+		</div>
+		<script>
+			let title = document.getElementsByClassName('title')[0]
+			let content = document.getElementsByClassName('content')[0]
+			let titlelist = title.children
+			let contentlist = content.children
+			for(let i = 0; i < titlelist.length; i++){
+				let item = titlelist[i];
+				item.onclick = () => {
+					let active = title.getElementsByClassName('active')[0]
+					active.classList.remove('active')
+					item.classList.add("active")
+					
+					
+					for(let j = 0; j < titlelist.length; j++){
+					contentlist[j].style.display = "none"
+					}
+					contentlist[i].style.display = "block"
+				}
+			}
+		</script>
+</div> 
+        <div id="fade" class="black_overlay"></div> 
+		  <br>
+
+
+	  <a href="../iis.html"><p>点击登录网站</p></a>
+		  </div>
+
+<!--<script language='javascript'>document.location = 'mainpage/index.html'</script>-->
+<!--<h1>欢迎来到橙鸭乐园!点击前往>></h1>-->
+<!--<h3>请选择托管公司(长时间加载切换另一个):</h3>-->
+	  <!--<a href="mainpage/index.html" target="_blank"><h2>GitHub</h2></a>-->
+	<!--<a href="https://uh2jlzqdsfrcn1dnqzmwww-on.drv.tw/mainpage/" target="_blank"><h2>onedrive</h2></a>-->
+	<style>
+      @-webkit-keyframes fadein {
+        0% {
+            opacity: 0;
+            background-color: #fff;
+        }
+        100% {
+            opacity: 1;
+            background-color:  #fff;
+        }
+      }
+
+      body {
+        -webkit-animation-name: fadein;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: 1; /* 动画只播放一次 */
+      }
+</style>
+  <!--每页一句--> 
+ <style> 
+ .text2 {text-align:center;}
+#text  {border: 1px solid #FA9150;width: 300px;background: #FEF1E9;color: #000000;line-height: 50px;text-align: center;font-size: 14px;font-weight: bold;}
+</style><script>function mrc() {var butong_net = new Array('每页一句:橙子网欢迎您','每页一句:橙子歌曲有创意','每页一句:每次加载文字都会变哦','每页一句:微信公众号:橙子游乐场','每页一句:橙子游戏欢迎玩','每页一句:祝你天天开心','每页一句:祝你成绩好好','每页一句:橙鸭故事欢迎阅读'); var butong_net2 = Math.floor(Math.random() * butong_net.length); var text = document.getElementById("text");text.firstChild.nodeValue = butong_net[butong_net2];}window.onload = mrc;</script>
+<div id="text2"><p id="text">每页一句加载中...</p></div>
+</body>
+</html>
+
