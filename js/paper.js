@@ -5,13 +5,13 @@ document.getElementById("l1").innerHTML="公告栏";
 document.getElementById("l2").innerHTML="文章推荐";
 document.getElementById("l3").innerHTML="游戏推荐";	
 //---------------p文章---------------------------
-document.getElementById("p1").innerHTML="文章1";	
-document.getElementById("p2").innerHTML="文章2";	
+document.getElementById("p1").innerHTML="橙子网短链接";	
+document.getElementById("p2").innerHTML="橙鸭小故事";	
 document.getElementById("p3").innerHTML="文章3";	
 document.getElementById("p4").innerHTML="文章4";
 //---------------pm文章描述-----------------------
-document.getElementById("pm1").innerHTML="文章描述1";
-document.getElementById("pm2").innerHTML="文章描述2";
+document.getElementById("pm1").innerHTML="橙子网短链接_GITHUB服务器点击前往";
+document.getElementById("pm2").innerHTML="有趣的橙鸭小故事欢迎阅读!";
 document.getElementById("pm3").innerHTML="文章描述3";
 document.getElementById("pm4").innerHTML="文章描述4";
 //---------------g游戏----------------------------
@@ -32,17 +32,15 @@ document.getElementById("gi1").alt="gi游戏图片描述1";
 document.getElementById("gi2").alt="gi游戏图片描述2";
 document.getElementById("gi3").alt="gi游戏图片描述3";
 //--------------pu文章跳转链接-------------------
-document.getElementById("pu1").href="1.com"; 
-document.getElementById("pu2").href="2.com"; 
+document.getElementById("pu1").href="../s/index.html"; 
+document.getElementById("pu2").href="../ordylan/ordylan_article/stories/ordylan/index.html"; 
 document.getElementById("pu3").href="3.com"; 
 document.getElementById("pu4").href="4.com"; 
 //--------------pu文章跳转链接-------------------
 document.getElementById("gu1").href="1.com"; 
-document.getElementById("gu2").href="2.com"; 
+document.getElementById("gu2").href="2.com";
 document.getElementById("gu3").href="3.com"; 
 //--------------不需要的可以隐藏--------------
-var obj = document.getElementById("pa1");obj.innerHTML = "";
-var obj = document.getElementById("pa2");obj.innerHTML = "";
 var obj = document.getElementById("pa3");obj.innerHTML = "";
 var obj = document.getElementById("pa4");obj.innerHTML = "";
 var obj = document.getElementById("ga2");obj.innerHTML = "";
