@@ -24,9 +24,9 @@ document.getElementById("gm2").innerHTML="游戏描述2";
 document.getElementById("gm3").innerHTML="游戏描述3";
 //--------------gi游戏图片链接描述-------------------
 //gi游戏图片链接
-document.getElementById("gi1").src="1.jpg";
-document.getElementById("gi2").src="2.jpg";
-document.getElementById("gi3").src="3.jpg";
+document.getElementById("gi1").src="#";
+document.getElementById("gi2").src="#";
+document.getElementById("gi3").src="#";
 //gi游戏图片描述
 document.getElementById("gi1").alt="gi游戏图片描述1";
 document.getElementById("gi2").alt="gi游戏图片描述2";
@@ -34,12 +34,12 @@ document.getElementById("gi3").alt="gi游戏图片描述3";
 //--------------pu文章跳转链接-------------------
 document.getElementById("pu1").href="../s/index.html"; 
 document.getElementById("pu2").href="../ordylan/ordylan_article/stories/ordylan/index.html"; 
-document.getElementById("pu3").href="3.com"; 
-document.getElementById("pu4").href="4.com"; 
-//--------------pu文章跳转链接-------------------
-document.getElementById("gu1").href="1.com"; 
-document.getElementById("gu2").href="2.com";
-document.getElementById("gu3").href="3.com"; 
+document.getElementById("pu3").href="#"; 
+document.getElementById("pu4").href="#"; 
+//--------------gu游戏跳转链接-------------------
+document.getElementById("gu1").href="#"; 
+document.getElementById("gu2").href="#";
+document.getElementById("gu3").href="#"; 
 //--------------不需要的可以隐藏--------------
 var obj = document.getElementById("pa3");obj.innerHTML = "";
 var obj = document.getElementById("pa4");obj.innerHTML = "";
