@@ -17,3 +17,8 @@ document.getElementById("b5").href="../ordylan_music/index.html";
 //document.getElementById("b6").href="#";
 document.getElementById("b7").href="../../index.html";
 
+
+
+//---------------a关于------------------------
+document.getElementById("a").innerHTML="关于我";
+document.getElementById("a").href="../about/index.html"; 
