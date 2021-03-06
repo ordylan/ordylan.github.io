@@ -21,4 +21,4 @@ document.getElementById("b7").href="../../index.html";
 
 //---------------a关于------------------------
 document.getElementById("a").innerHTML="关于我";
-document.getElementById("a").href="../about/index.html"; 
+document.getElementById("a").href="../aboutnew/index.html"; 
