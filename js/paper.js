@@ -107,8 +107,11 @@ document.getElementById("w6").href="../ordylan/ordylan_article/articles/2020.10.
 document.getElementById("w7").innerHTML="每页一句来啦,每次加载文字都会变哦~";
 //---------------通知8---------------------------
 document.getElementById("w8").innerHTML="[置项通知]<br>橙子网主页大改版,需要你的浏览器支持js。你可以看到这句话说明你的浏览器支持js。橙子电影院下线，将变成别的，敬请期待。";
-
-
+//---------------通知9---------------------------
+document.getElementById("t5").alt="橙子网两周年啦!庆典活动重启,快来玩玩吧~";
+document.getElementById("t5").src="image/2ndlogo.gif";
+document.getElementById("w5").innerHTML="橙子网两周年啦!";
+document.getElementById("w5").href="2nd/index.html";
 
 
 
