@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ecee3ae7c3d79d2324688ed651f923f2";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    <!-- 页面通用 header 配置 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>橙子网2周年庆典</title>
+  
+</head>
+
+<body class="en">
+<!-- nav -->
+<div class="wrap">
+    <div class="section">
+        
+        <!-- 内容版块 -->
+        <div class="part">
+            <!-- 目录按钮 -->
+            <a href="javascript:;" class="btn_catalog" onclick="gtag('event','x_download',{'event_category':'hundredrhythms','event_label':'btn_catalog'});"></a>
+            <ul class="catalog_box">
+                <li><a href="../index.html">返回首页</a></li>
+                
+            </ul>
+
+            <!-- 音乐按钮 -->
+            <a href="javascript:control();" class="btn_music" onclick="gtag('event','x_download',{'event_category':'hundredrhythms','event_label':'btn_music'});"></a>
+            <audio src="images/master.mp3" id="music" controls="controls" allow="autoplay" loop="loop" hidden /></audio>
+            
+
+
+
+            <div class="doraemon">
+                <p>新-HTML实战</p>
+                <a href="../../ordylan/ordylan_article/index.html" class="play_btn text-hide" onclick="gtag('event','x_play_video',{'event_category':'hundredrhythms','event_label':'play_btn'});">play</a>
+            </div>
+
+      <div class="list_box"> <br><br>
+
+
+                <p class="list_text">新橙鸭故事阅读</p>
+
+
+
+  <ul>
+                    <li class="on">
+                        <a href="../../ordylan/ordylan_article/stories/ordylan/s/8.html" onclick="gtag('event','x_play_video',{'event_category':'hundredrhythms','event_label':'list1'});">
+                            <img src="images/list_pic2.png">
+                            <p>橙子网2周年纪念作品</p>
+                            <span>橙子网2周年纪念作品</span> 
+                            <i></i>
+                        </a>
+                    </li>
+                     <li class="on">
+                        <a href="../../ordylan/ordylan_article/stories/ordylan/s/8.html" onclick="gtag('event','x_play_video',{'event_category':'hundredrhythms','event_label':'list1'});">
+                            <img src="images/list_pic2.png">
+                             <p>——“黑客”世界大探险</p>
+                            <span>——“黑客”世界大探险</span> 
+                            <i></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="rocket">
+                <a href="../../ordylan/ordylan_article/articles/2021.4.10_1/index.html" class="play_btn">
+                    <div class="icon"></div>
+                    <p class="new_text">2周年庆典公告</p>
+                    <span class="go_text">GO ></span>
+                </a>
+                <div class="dadu1"></div>
+                <div class="dadu2"></div>
+                <div class="dadu3"></div>
+            </div>
+
+            <div class="combo">
+                <p>点击退出</p>
+                <a href="../index.html" class="play_btn text-hide" onclick="gtag('event','x_play_video',{'event_category':'hundredrhythms','event_label':'play_btn'});">play</a>
+            </div>
+
+            <div class="spotlight3"></div>
+            <div class="spotlight4"></div>
+            <div class="character1"></div>
+            <div class="character2"></div>
+            <div class="character3"></div>
+            <div class="character4"></div>
+
+            
+            <!-- <i class="spr down-arrow"></i> -->
+            <div class="slogan"></div>
+        </div>
+        <div class="spotlight1"></div>
+        <div class="spotlight2"></div>
+    </div>
+</div>
+
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="js/index.js"></script>
+
+
+
+<script>
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        $("body").addClass("mobile");
+        // $(".wrap").scrollLeft(290);
+        // $(".ar .wrap").scrollLeft(-268);
+    }
+
+    // 背景音乐
+    function repeat(){
+        var audio = document.getElementById('music'); 
+            audio.currentTime = 0;//重新播放
+        }
+        function control(){
+            var audio = document.getElementById('music'); 
+            if(audio!==null){ 
+            if(audio.paused){ 
+                audio.play();// 播放
+                $('.btn_music').addClass('on')
+            }else{
+                audio.pause();// 暂停
+                $('.btn_music').removeClass('on')
+            }
+        } 
+    }
+    window.setTimeout(function() {
+        control()
+    },1000);
+
+    $('.footer').append('<div class="point"><i class="finger"></i></div>');
+
+      // 横屏提示
+      function landscape(isVertical, config) {
+            var showWay = isVertical ? "@media screen and (min-aspect-ratio: 12/7){ #orientLayer{display:block;} }" :
+                "@media all and (orientation : portrait){ #orientLayer{display: block;} }";
+            var color = config && config.color ? config.color : "#000",
+                images = config && config.images ? config.images :
+                "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIYAAADaCAMAAABU68ovAAAAXVBMVEUAAAD29vb////x8fH////////x8fH5+fn29vby8vL////5+fn39/f6+vr////x8fH////////+/v7////09PT////x8fH39/f////////////////////x8fH///+WLTLGAAAAHXRSTlMAIpML+gb4ZhHWn1c2gvHBvq1uKJcC6k8b187lQ9yhhboAAAQYSURBVHja7d3blpowFIDhTUIAOchZDkre/zE7ycySrbUUpsRN2/1fzO18KzEqxEVgTiZNfgmmtxRc8iaR8HNe8x4BtjQePKayYCIoyBSgvNNE1AkNSHqZyLqk97EgUCCHBzZ5mkg7ScvIJuIyOyXBRFxgpqWZyGsAZLB1KjsJi8nutHU4JCRbFRH8tmirI9k8Jx2sqNs8K/m0LQkrktO2crgcgXGB4AiTEsB0hJfo9MGgX7CGcYiYwQxmMOOvZwRhBG8tCoMXjBDeXvWCEcHbi14wgCBmMIMZzGAGM5jxETNwzMAxA8cMHDNwzMAxA8cMHDNwzMAxA8cMHDNwzMAxY6E2rUQxnH2tz9cirlJFwFBJedaPnUv0M7++egPDE8iAJcIDmxwH5wwv9vUviw2kLbVO3TJU5uul/EyB0FoLp4x60PdGUd3qPurrWyjGGTc05u+1dcgI7/+tCCPARWGhH7o5Y7RCf+bH9ctXLp6v2BVDxfqz0oPXeSVaNtINo/1SXDv4dck8IIkbhtC2ol+iouEonTBCbYvVMnXOjxww6s/RFrBUpXHh/gw1rHj5d/qhYn9Gpk2FWh6xRBRX5Oj3Znh2Sq49/L6+y8pB26q9GbE2dbA2mVbx6I+7MfBglLCttm73ZQi7AD3iL4HqjFYJHSPRppqaUaJ3ATpGa+ckpGak2hRRMyqjGMkvl+xyFeSMwjAqcsZgGDdyhl0oNTnDN4yenJGZFGxNChP5/Y3efh6SM2rDOJMzboYxkDMqwyjIGcIw6F+io2FU1IxIm1JqRmgXSkvNKNCXeTpGrU0JNSO2c6LIGPgCS8AuDHz9ta0SXWDtxoDRH+MqlbC2Dt2G2JFRadtQZt2qq/orGowdGb2euxYiqWEpVWhTBnszoNAPdStuQwxqf0aocdWKW4Z+DfszIh8pxJqbuCE4YAC+4bm0evtipjpgJHeFnyyt1Ku2xa0bhjxr27p75rECNwyI9ZwvXkHq+7aTaMEV44YYy/spfgjgjNHaWW+GeUhGEX7tLlVinIFDDSgnOwhi1V6bU0b6tVS9eAERe863g4dRrtiHdc6o+nn5vtyVVgR79Cqt4uL6gfHPQyGqtP2vf7HADGbcYwaOGThm4JiBYwaOGThm4JiBYwaOGThm4JiBYwaOGThm4JiBYwaOGThm4JjhtOM+J/AgT008yDMkN/dPP9hzS8zAMQN3OEYeekp5YU7KOKXwVXqiY+QS7smcinGKABWdiBgpPJTSMHJ4KidhhPBUSMLw4CmPhKHgKUXCkHsygum71ftNSgCX6bsl8FQyfbcL5EdYsDk0R3j7aiA5wpt5AjKg/2gLJEBD/0Hf2OOf/vRrj6z/7GtP4B3nMKyjHA12kIPSjnJs3FEO0TvKkYJHOWCR+rjJH0Vn6fI5PjNbAAAAAElFTkSuQmCC";
+            // style
+            var nodeStyle = document.createElement('style');
+            nodeStyle.setAttribute('type', 'text/css');
+            nodeStyle.innerHTML =
+                '@-webkit-keyframes rotation{10%{transform: rotate(90deg); -webkit-transform: rotate(90deg)} 50%, 60%{transform: rotate(0deg); -webkit-transform: rotate(0deg)} 90%{transform: rotate(90deg); -webkit-transform: rotate(90deg)} 100%{transform: rotate(90deg); -webkit-transform: rotate(90deg)} } @keyframes rotation{10%{transform: rotate(90deg); -webkit-transform: rotate(90deg)} 50%, 60%{transform: rotate(0deg); -webkit-transform: rotate(0deg)} 90%{transform: rotate(90deg); -webkit-transform: rotate(90deg)} 100%{transform: rotate(90deg); -webkit-transform: rotate(90deg)} } #orientLayer{display: none; z-index: 999999;} ' +
+                showWay +
+                ' .mod-orient-layer{display: none; position: fixed; height: 100%; width: 100%; left: 0; top: 0; right: 0; bottom: 0; background: ' +
+                color +
+                '; z-index: 9997} .mod-orient-layer__content{position: absolute; width: 100%; top: 50%; margin-top: -75px; text-align: center} .mod-orient-layer__icon-orient{background-image: url(' +
+                images +
+                '); display: inline-block; width: 67px; height: 109px; transform: rotate(90deg); -webkit-transform: rotate(90deg); -webkit-animation: rotation infinite 1.5s ease-in-out; animation: rotation infinite 1.5s ease-in-out; -webkit-background-size: 67px; background-size: 67px} .mod-orient-layer__desc{margin-top: 20px; font-size: 15px; color: #fff}'
+            document.getElementsByTagName('body')[0].appendChild(nodeStyle);
+            // dom
+            var nodeDom = document.createElement('div');
+            nodeDom.setAttribute('id', 'orientLayer');
+            nodeDom.setAttribute('class', 'mod-orient-layer');
+            nodeDom.innerHTML =
+                '<div class="mod-orient-layer__content"> <i class="icon mod-orient-layer__icon-orient"></i> </div>';
+            document.getElementsByTagName('body')[0].appendChild(nodeDom);
+        };
+        landscape(0);
+</script>
+</body>
+
+</html>
