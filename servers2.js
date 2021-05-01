@@ -24,3 +24,8 @@ document.getElementById("s6").href="../iis.html";
 document.getElementById("s7").href="../win.html";
 document.getElementById("s8").href="../b.html";
 
+
+//活动
+document.getElementById("hdimg").alt="活动的图片描述呵呵哈哈哈";
+document.getElementById("hdimg").src="#";
+document.getElementById("hdurl").href="#"
