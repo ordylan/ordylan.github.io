@@ -74,3 +74,20 @@ left: calc(70 / 1920 * 100vw);
 width: 110px;
 height: 25px;
 }
+
+
+div#stz1,div#stz2,div#stz3,div#stz4,div#stz5,div#stz6,div#stz7,div#stz8 {
+  position: absolute;
+background:white;
+  top: calc(500 / 1920 * 100vw);
+left: calc(600 / 1920 * 100vw);
+}
+
+
+div#stz000 {
+  position: absolute;
+background:white;
+  top: calc(700 / 1920 * 100vw);
+left: calc(678 / 1920 * 100vw);
+}
+
