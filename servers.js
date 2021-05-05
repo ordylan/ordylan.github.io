@@ -29,11 +29,11 @@ document.getElementById("s7").href="javascript:void(0)";
 document.getElementById("s8").href="javascript:void(0)";
 
 //活动
-document.getElementById("hdimg").alt="活动的图片描述呵呵哈哈哈.";
-document.getElementById("hdimg").src="#";
-document.getElementById("hdurl").href="#"; 
-document.getElementById("hdurl").innerHTML="活动的qian wang文字字."; 
-document.getElementById("hdms").innerHTML="活动的文字字字字字字."; 
+document.getElementById("hdimg").alt="2周年庆典";
+document.getElementById("hdimg").src="https://ordylan.gitee.io/logos/2ndlogo.gif";
+document.getElementById("hdurl").href="mainpage/2nd/index.html"; 
+document.getElementById("hdurl").innerHTML="点击前往庆典"; 
+document.getElementById("hdms").innerHTML="橙子网2周年啦，庆典活动来袭，快去玩玩吧！"; 
 
 
 document.getElementById("stz1").innerHTML="欢迎来到网页山谷服务器(繁忙)!"; 
