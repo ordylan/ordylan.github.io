@@ -31,7 +31,7 @@ document.getElementById("s8").href="javascript:void(0)";
 //活动
 document.getElementById("hdimg").alt="2周年庆典";
 document.getElementById("hdimg").src="https://ordylan.gitee.io/logos/2ndlogo.gif";
-document.getElementById("hdurl").href="mainpage/2nd/index.html"; 
+document.getElementById("hdurl").href="https://ordylan.gitee.io/logos/2nd/index.html"; 
 document.getElementById("hdurl").innerHTML="点击前往庆典"; 
 document.getElementById("hdms").innerHTML="橙子网2周年啦，庆典活动来袭，快去玩玩吧！"; 
 
