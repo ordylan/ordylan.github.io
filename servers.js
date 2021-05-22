@@ -36,7 +36,7 @@ document.getElementById("hdurl").innerHTML="点击前往庆典";
 document.getElementById("hdms").innerHTML="橙子网2周年啦，庆典活动来袭，快去玩玩吧！"; 
 
 
-document.getElementById("stz1").innerHTML="欢迎来到网页山谷服务器(繁忙)!"; 
+document.getElementById("stz1").innerHTML="网页山谷欢迎您↑"; 
 document.getElementById("stz2").innerHTML="阿得梦山脉"; 
 document.getElementById("stz4").innerHTML="代码小镇服务器(错误)!"; 
 document.getElementById("stz5").innerHTML="元素王国服务器正在维护!"; 

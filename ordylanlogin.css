@@ -5,11 +5,13 @@ div {
 p{font-size: 120%}
    a:link {  
    color: #FFBA06;  
-   text-decoration: none;  
+   text-decoration: none;
+ font-weight:bold  
    }  
    a:visited {  
    text-decoration: none;  
    color: #FFBA06;  
+ font-weight:bold
    }  
    a:hover {  
    text-decoration: none;  
@@ -19,33 +21,26 @@ p{font-size: 120%}
    a:active {  
    text-decoration: none;  
    color: #FFBA06;  
+ font-weight:bold
    }  
 
-div#login {
-  position: absolute;
-  top: calc(765 / 1920 * 100vw);
-left: calc(710 / 1920 * 100vw);
-}
 
 div#xzfwq {
-  position: absolute;
-  top: calc(588 / 1920 * 100vw);
-left: calc(550 / 1920 * 100vw);
+position: absolute;
+ width: calc(300 / 1920 * 100vw);
+  top: calc(420 / 1080 * 100vh);
+left: calc(730 / 1920 * 100vw);
+
 }
 
-img#odpg {
+/*img#odpg {
 position: absolute;
 top: calc(200 / 1920 * 100vw);
 left: calc(380 / 1920 * 100vw);
 width: calc(900 / 1920 * 100vw);
-}
-img#btn1 {
-position: absolute;
- top: calc(580 / 1920 * 100vw);
-left: calc(530 / 1920 * 100vw);
-width: 360px;
-height: 40px;
-}
+}*/
+ 
+
 img#btn2 {
 position: absolute;
   top: calc(768 / 1920 * 100vw);
@@ -57,8 +52,8 @@ height: 30px;
 
 div#tz {
   position: absolute;
-  top: calc(100 / 1920 * 100vw);
-left: calc(100 / 1920 * 100vw);
+  top: calc(720 / 1080 * 100vh);
+left: calc(530 / 1920 * 100vw);
 }
 
 div#exit {
@@ -67,27 +62,35 @@ left:238px;
 bottom:0;
 }
 
-img#btn3 {
-position: absolute;
-  top: calc(103 / 1920 * 100vw);
-left: calc(70 / 1920 * 100vw);
-width: 110px;
-height: 25px;
-}
+
 
 
 div#stz1,div#stz2,div#stz3,div#stz4,div#stz5,div#stz6,div#stz7,div#stz8 {
   position: absolute;
 background:white;
-  top: calc(500 / 1920 * 100vw);
-left: calc(600 / 1920 * 100vw);
+ top: calc(550 / 1080 * 100vh);
+left: calc(650  / 1920 * 100vw);
 }
 
 
 div#stz000 {
   position: absolute;
 background:white;
-  top: calc(700 / 1920 * 100vw);
-left: calc(678 / 1920 * 100vw);
+  top: calc(600 / 1920 * 100vw);
+left: calc(700 / 1920 * 100vw);
 }
 
+img#fangwuchu{
+position: absolute;
+  top:0px;
+left: 0px;
+width: 100%;
+height: 100%;
+}
+
+
+div#huanpifu {
+  position: absolute;
+  top: calc(800 / 1080 * 100vh);
+left: calc(1270 / 1920 * 100vw);
+}
