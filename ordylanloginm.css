@@ -178,5 +178,36 @@ width: 90%;
 height: 80%;
 background:#000000;
 color:#FFFFFF;
-text-align:left
+text-align:left;
+overflow:scroll;
 }
+
+
+img#urimg{
+-webkit-transform: rotate(90deg);/*Safari 4+,Google Chrome 1+ */
+-moz-transform: rotate(90deg);/*Firefox 3.5+*/
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);/*ie*/
+position: absolute;
+  top: calc(100 / 960 * 100vh);
+left: calc(360 / 540 * 100vw);
+width: 8.3vw;
+}
+
+img#urimg2{
+position: absolute;
+width: 50%;
+}
+
+
+
+div#aboutur{
+-webkit-transform: rotate(90deg);/*Safari 4+,Google Chrome 1+ */
+-moz-transform: rotate(90deg);/*Firefox 3.5+*/
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);/*ie*/
+
+width: calc(999 / 1080 * 100vw);
+height: calc(600 / 1080 * 100vw);
+}
+
+
+
