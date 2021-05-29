@@ -1,0 +1,312 @@
+@media screen and (max-width: 960px){
+  /* 手机端CSS代码 */
+
+.container{
+				width: 500px;
+				border: 1px solid orange;
+				margin: 50px auto;
+			}
+div {
+  font-size:110%; 
+  text-align: center
+}
+
+
+
+div#xzfwq {
+-webkit-transform: rotate(90deg);/*Safari 4+,Google Chrome 1+ */
+-moz-transform: rotate(90deg);/*Firefox 3.5+*/
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);/*ie*/
+  position: absolute;
+  top: calc(400 / 960 * 100vh);
+left: calc(270 / 540 * 100vw);
+}
+
+
+
+img#btn2 {
+-webkit-transform: rotate(90deg);/*Safari 4+,Google Chrome 1+ */
+-moz-transform: rotate(90deg);/*Firefox 3.5+*/
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);/*ie*/
+position: absolute;
+  top: calc(900 / 1080 * 100vw);
+left: calc(-40 / 1080 * 100vw);
+width: 230px;
+height: 30px;
+}
+
+
+div#tz {
+-webkit-transform: rotate(90deg);/*Safari 4+,Google Chrome 1+ */
+-moz-transform: rotate(90deg);/*Firefox 3.5+*/
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);/*ie*/
+  position: absolute;
+  top: calc(260 / 960 * 100vh);
+left: calc(150 / 540 * 100vw);
+}
+
+div#exit {
+
+position:absolute;
+left:188px;
+bottom:0;
+}
+
+
+
+
+div#stz1,div#stz2,div#stz3,div#stz4,div#stz5,div#stz6,div#stz7,div#stz8 {
+-webkit-transform: rotate(90deg);/*Safari 4+,Google Chrome 1+ */
+-moz-transform: rotate(90deg);/*Firefox 3.5+*/
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);/*ie*/
+  position: absolute;
+background:white;
+  top: calc(888 / 1080 * 100vw);
+left: calc(400 / 1080 * 100vw);
+}
+
+
+div#stz000 {
+-webkit-transform: rotate(90deg);/*Safari 4+,Google Chrome 1+ */
+-moz-transform: rotate(90deg);/*Firefox 3.5+*/
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);/*ie*/
+  position: absolute;
+background:white;
+  top: calc(900 / 1080 * 100vw);
+left: calc(333 / 1080 * 100vw);
+}
+
+
+
+
+div#light{
+-webkit-transform: rotate(90deg);/*Safari 4+,Google Chrome 1+ */
+-moz-transform: rotate(90deg);/*Firefox 3.5+*/
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);/*ie*/
+ top: calc(666 / 1080 * 100vw);
+left: calc(50 / 1080 * 100vw);
+
+width: calc(999 / 1080 * 100vw);
+height: calc(600 / 1080 * 100vw);
+}
+
+
+div#tongzhi{
+-webkit-transform: rotate(90deg);/*Safari 4+,Google Chrome 1+ */
+-moz-transform: rotate(90deg);/*Firefox 3.5+*/
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);/*ie*/
+
+width: calc(999 / 1080 * 100vw);
+height: calc(600 / 1080 * 100vw);
+}
+
+
+
+
+
+div#pifu {
+-webkit-transform: rotate(90deg);/*Safari 4+,Google Chrome 1+ */
+-moz-transform: rotate(90deg);/*Firefox 3.5+*/
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);/*ie*/
+height:80vw;
+}
+
+div#huanpifu {
+-webkit-transform: rotate(90deg);/*Safari 4+,Google Chrome 1+ */
+-moz-transform: rotate(90deg);/*Firefox 3.5+*/
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);/*ie*/
+  position: absolute;
+  top: calc(650 / 960 * 100vh);
+left: calc(120 / 540 * 100vw);
+
+}
+
+div#mtz {
+-webkit-transform: rotate(90deg);/*Safari 4+,Google Chrome 1+ */
+-moz-transform: rotate(90deg);/*Firefox 3.5+*/
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);/*ie*/
+  position: absolute;
+  top: calc(500 / 960 * 100vh);
+left: calc(-100 / 540 * 100vw);
+
+}
+
+
+
+div#xiazaibig {
+  position: absolute;
+  top:0px;
+left: 0px;
+width: 100%;
+height: 100%;
+background:#FFFFFF;
+}
+
+
+
+div#xiazaismall {
+  position: absolute;
+  top:10vh;
+left: 5vw;
+width: 90%;
+height: 80%;
+background:#000000;
+color:#FFFFFF;
+text-align:left;
+overflow:scroll;
+}
+
+
+img#urimg{
+-webkit-transform: rotate(90deg);/*Safari 4+,Google Chrome 1+ */
+-moz-transform: rotate(90deg);/*Firefox 3.5+*/
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);/*ie*/
+position: absolute;
+  top: calc(100 / 960 * 100vh);
+left: calc(360 / 540 * 100vw);
+width: 8.3vw;
+}
+
+img#urimg2{
+position: absolute;
+width: 50%;
+}
+
+
+
+div#aboutur{
+-webkit-transform: rotate(90deg);/*Safari 4+,Google Chrome 1+ */
+-moz-transform: rotate(90deg);/*Firefox 3.5+*/
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);/*ie*/
+
+width: calc(999 / 1080 * 100vw);
+height: calc(600 / 1080 * 100vw);
+}
+}
+ 
+@media screen and (min-width: 960px){
+  /* 电脑端CSS代码 */
+div#xzfwq {
+position: absolute;
+ width: calc(300 / 1920 * 100vw);
+  top: calc(420 / 1080 * 100vh);
+left: calc(730 / 1920 * 100vw);
+
+}
+
+/*img#odpg {
+position: absolute;
+top: calc(200 / 1920 * 100vw);
+left: calc(380 / 1920 * 100vw);
+width: calc(900 / 1920 * 100vw);
+}*/
+ 
+
+img#btn2 {
+position: absolute;
+  top: calc(768 / 1920 * 100vw);
+left: calc(700 / 1920 * 100vw);
+width: 160px;
+height: 30px;
+}
+
+
+div#tz {
+  position: absolute;
+  top: calc(720 / 1080 * 100vh);
+left: calc(530 / 1920 * 100vw);
+}
+
+div#exit {
+position:absolute;
+left:238px;
+bottom:0;
+}
+
+div#stz1,div#stz2,div#stz3,div#stz4,div#stz5,div#stz6,div#stz7,div#stz8 {
+  position: absolute;
+background:white;
+ top: calc(550 / 1080 * 100vh);
+left: calc(650  / 1920 * 100vw);
+}
+
+
+div#stz000 {
+  position: absolute;
+background:white;
+  top: calc(600 / 1920 * 100vw);
+left: calc(700 / 1920 * 100vw);
+}
+
+img#fangwuchu{
+position: absolute;
+  top:0px;
+left: 0px;
+width: 100%;
+height: 100%;
+}
+
+
+div#huanpifu {
+  position: absolute;
+  top: calc(800 / 1080 * 100vh);
+left: calc(1270 / 1920 * 100vw);
+}
+
+
+
+div#mtz {
+  position: absolute;
+  top:-99999px;
+left:-99999px;
+}
+
+
+div#xiazaibig {
+  position: absolute;
+  top:0px;
+left: 0px;
+width: 100%;
+height: 100%;
+background:#FFFFFF;
+
+}
+
+
+
+div#xiazaismall {
+  position: absolute;
+  top:10vh;
+left: 5vw;
+width: 90%;
+height: 80%;
+background:#000000;
+color:#FFFFFF;
+text-align:left;
+overflow:scroll;
+}
+
+
+
+
+img#urimg{
+position: absolute;
+  top: calc(100 / 1080 * 100vh);
+left: calc(100 / 1920 * 100vw);
+width: 8.3vw;
+}
+
+img#urimg2{
+position: absolute;
+width: 50%;
+}
+
+
+
+}
+
+
+
+
+
+

@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+
+
     <meta charset="utf-8">
     <title>橙子网_橙鸭乐园</title>
 <!--可以按浏览器语言来选择根目录的东东-->
@@ -17,8 +19,8 @@
         }
     </script>
 <!--可以按浏览器语言来选择根目录的东东-->
-<link rel="stylesheet" href="ordylanlogin.css" type="text/css">
-<link rel="stylesheet" href="ordylanloginm.css" type="text/css" media="screen and (max-device-width:1024px) and (orientation:portrait)" >
+<link rel="stylesheet" href="main.css" type="text/css">
+<!--<link rel="stylesheet" href="ordylanloginm.css" type="text/css" media="screen and (max-device-width:1024px) and (orientation:portrait)" >-->
 
     <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
 <!--彩蛋画-->
@@ -63,6 +65,57 @@ var _hmt = _hmt || [];
 	
 </head>
 <body>
+<script>
+//获得参数的方法
+var request =
+{QueryString : function(val){
+var uri = window.location.search;
+var re = new RegExp("" +val+ "=([^&?]*)", "ig");
+return ((uri.match(re))?(uri.match(re)[0].substr(val.length+1)):null);}}
+var canshu = request.QueryString("skin_id");
+
+if (canshu==1) {
+	var script = document.createElement("script");
+        script.type="text/javascript";
+        script.src="skin_olddoor.js";
+        document.body.appendChild(script);
+	var link = document.createElement("link");
+        link.type="text/css";
+        link.href="skin_olddoor.css";
+        link.rel="stylesheet";
+        document.body.appendChild(link);
+}
+
+else if (canshu==2) {
+	var script = document.createElement("script");
+        script.type="text/javascript";
+        script.src="skin_2_year_building.js";
+        document.body.appendChild(script);
+
+	var link = document.createElement("link");
+        link.type="text/css";
+        link.href="skin_2_year_building.css";skin_olddoor
+        link.rel="stylesheet";
+        document.body.appendChild(link);
+}
+
+else{
+    alert("皮肤文件获取失败，请联系网站管理员!\n错误码:skin_id="+canshu+"\n----------------\n已经自动选择skin_id=1\n皮肤名字为老式游乐场大门\n皮肤文件为skin_olddoor.js\n皮肤样式为skin_olddoor.css\n");
+
+	var script = document.createElement("script");
+        script.type="text/javascript";
+        script.src="skin_olddoor.js";
+        document.body.appendChild(script);
+	var link = document.createElement("link");
+        link.type="text/css";
+        link.href="skin_olddoor.css";
+        link.rel="stylesheet";
+        document.body.appendChild(link);
+}
+</script>
+
+
+
 <a id="loggg"  href = "javascript:void(0);" onclick = "delayURL('https://ordylan.github.io/mainpage/index.html',3250);document.getElementById('huanpifu').style.display='none';document.getElementById('xzfwq').style.display='none';document.getElementById('tz').style.display='none';document.getElementById('fangwuchu').style.display='block';document.getElementById('stz1').style.display='block';document.getElementById('stz000').style.display='block';">
     <div id="dragonBonesPlayer" style="margin: auto;width: 100%;height: 100%;">
         <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
@@ -127,7 +180,6 @@ var _hmt = _hmt || [];
 <·&nbsp;&nbsp;GITEE<br>
 </div>
 </div>
-       
 
 <div id="stz1" style="display: none">
 服务器提示文字~~~~~
@@ -191,7 +243,18 @@ var _hmt = _hmt || [];
 	</div> </div> 
 
 <div id="pifu" class="white_content">
-yihoufa~~
+<div style=" border:2px solid #FFA500">
+<img id="skinimg" src="skin_olddoor.png" alt="skin_olddoor">
+<p>皮肤-老式游乐场大门</p>
+<a id="hdurl" href="index.html?skin_id=1">换它</a>
+</div> 
+
+
+<div style=" border:2px solid #FFA500">
+<img id="skinimg" src="skin_2_year_building.png" alt="skin_2_year_building">
+<p>皮肤-2周年大楼</p>
+<a id="hdurl" href="index.html?skin_id=2">换它</a>
+</div> 
 <br><a href = "javascript:void(0)" onclick = "document.getElementById('pifu').style.display='none';document.getElementById('fade').style.display='none'">我不换了</a>
 	</div> 
 
@@ -295,7 +358,7 @@ yihoufa~~
 <div id="aboutur" class="white_content">
 <h2>关于优若入姆</h2>
 新款地下城故事里面地下城的LOGO，后来觉得设计的挺好，就放网站上来了。以后就可以写网站由USUALROOM提供技术支持，很酷吧~
-<<br><img id="urimg2" src="usualroomlogo.bmp" alt="优若入姆logo">
+<br><img id="urimg2" src="usualroomlogo.bmp" alt="优若入姆logo">
 <br><br><br><a href = "javascript:void(0)" onclick = "document.getElementById('aboutur').style.display='none';document.getElementById('fade').style.display='none'">我知道了</a>
 	</div> 
 
@@ -324,10 +387,14 @@ yihoufa~~
 	<script egret="lib" src="libs/main.min.js"></script>
 
 
-	<div style="display: none">
-		<b id="data"></b>
+
+<div id="sssurl">
+
 </div>
-<script type="text/javascript" src="skin_olddoor.js"></script>
+<div style="display: none">
+<b id="data"></b>
+HAHA图片代码
+</div>
 
 
 	<script type="text/javascript">
