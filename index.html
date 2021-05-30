@@ -145,14 +145,12 @@ if(isMobile){
 }
 </script>
 <script>
-//获得参数的方法
 var request =
 {QueryString : function(val){
 var uri = window.location.search;
 var re = new RegExp("" +val+ "=([^&?]*)", "ig");
 return ((uri.match(re))?(uri.match(re)[0].substr(val.length+1)):null);}}
 var canshu = request.QueryString("skin_id");
-
 if (canshu==1) {
 	var script = document.createElement("script");
         script.type="text/javascript";
@@ -389,14 +387,15 @@ else{
 
 
 <img style="display: none;"id="fangwuchu" src="toumbtn.png" alt="??">
-<a href = "index.html"><div id="stz000" style="display: none">
+<a id="csxgq" href = "index.html"><div id="stz000" style="display: none">
 出错了?返回上一页~~~
 </div></a>
 <script type="text/javascript" src="servers.js"></script>
 
-
-
-
+<script>
+   var aObj = document.getElementById("csxgq");
+    aObj.href = "index.html?skin_id="+canshu;
+</script>
 
 <div id="sssurl">
 
