@@ -22,11 +22,6 @@
 <!--<link rel="stylesheet" href="ordylanloginm.css" type="text/css" media="screen and (max-device-width:1024px) and (orientation:portrait)" >-->
 
     <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
-	<script egret="lib" src="libs/egret.min.js"></script>
-	<script egret="lib" src="libs/egret.web.min.js"></script>
-	<script egret="lib" src="libs/promise.min.js"></script>
-	<script egret="lib" src="libs/dragonBones.min.js"></script>
-	<script egret="lib" src="libs/main.min.js"></script>
 
 
 <!--彩蛋画-->
@@ -134,65 +129,6 @@ var _hmt = _hmt || [];
 <·&nbsp;&nbsp;GITEE<br>
 </div>
 </div>
-<script>
-var ua = navigator.userAgent;
-var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
-isIphone =!ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
-isAndroid = ua.match(/(Android)\s+([\d.]+)/),
-isMobile = isIphone || isAndroid;
-if(isMobile){
- alert("已检测到你在手机访问网站，当你点击非按钮区域并没有进入网站时，可以在服务器列表登录网站!!!");
-}
-</script>
-<script>
-var request =
-{QueryString : function(val){
-var uri = window.location.search;
-var re = new RegExp("" +val+ "=([^&?]*)", "ig");
-return ((uri.match(re))?(uri.match(re)[0].substr(val.length+1)):null);}}
-var canshu = request.QueryString("skin_id");
-if (canshu==1) {
-	var script = document.createElement("script");
-        script.type="text/javascript";
-        script.src="skin_olddoor.js";
-        document.body.appendChild(script);
-	var link = document.createElement("link");
-        link.type="text/css";
-        link.href="skin_olddoor.css";
-        link.rel="stylesheet";
-        document.body.appendChild(link);
-}
-
-else if (canshu==2) {
-	var script = document.createElement("script");
-        script.type="text/javascript";
-        script.src="skin_2_year_building.js";
-        document.body.appendChild(script);
-
-	var link = document.createElement("link");
-        link.type="text/css";
-        link.href="skin_2_year_building.css";
-        link.rel="stylesheet";
-        document.body.appendChild(link);
-}
-
-else{
-    alert("皮肤文件获取失败，请联系网站管理员!\n错误码:skin_id="+canshu+"\n----------------\n已经自动选择skin_id=1\n皮肤名字为老式游乐场大门\n皮肤文件为skin_olddoor.js\n皮肤样式为skin_olddoor.css\n");
-
-	var script = document.createElement("script");
-        script.type="text/javascript";
-        script.src="skin_olddoor.js";
-        document.body.appendChild(script);
-	var link = document.createElement("link");
-        link.type="text/css";
-        link.href="skin_olddoor.css";
-        link.rel="stylesheet";
-        document.body.appendChild(link);
-}
-</script>
-
-
-
 
 <div id="stz1" style="display: none">
 服务器提示文字~~~~~
@@ -384,6 +320,11 @@ else{
 <div id="login">
 <a href="javascript:void(0)" onclick = "delayURL('https://ordylan.github.io/mainpage/index.html',3000);document.getElementById('tz').style.display='none';document.getElementById('btn3').style.display='none';document.getElementById('login').style.display='none';document.getElementById('fade').style.display='none';document.getElementById('light').style.display='none';document.getElementById('btn2').style.display='none';document.getElementById('btn1').style.display='none';document.getElementById('xzfwq').style.display='none';document.getElementById('stz1').style.display='block';document.getElementById('stz000').style.display='block';"><p>点击登录网站</p></a>
 </div>-->
+	<script egret="lib" src="libs/egret.min.js"></script>
+	<script egret="lib" src="libs/egret.web.min.js"></script>
+	<script egret="lib" src="libs/promise.min.js"></script>
+	<script egret="lib" src="libs/dragonBones.min.js"></script>
+	<script egret="lib" src="libs/main.min.js"></script>
 
 
 <img style="display: none;"id="fangwuchu" src="toumbtn.png" alt="??">
@@ -395,6 +336,62 @@ else{
 <script>
    var aObj = document.getElementById("csxgq");
     aObj.href = "index.html?skin_id="+canshu;
+</script>
+<script>
+var ua = navigator.userAgent;
+var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+isIphone =!ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+isMobile = isIphone || isAndroid;
+if(isMobile){
+ alert("已检测到你在手机访问网站，当你点击非按钮区域并没有进入网站时，可以在服务器列表登录网站!!!");
+}
+</script>
+<script>
+var request =
+{QueryString : function(val){
+var uri = window.location.search;
+var re = new RegExp("" +val+ "=([^&?]*)", "ig");
+return ((uri.match(re))?(uri.match(re)[0].substr(val.length+1)):null);}}
+var canshu = request.QueryString("skin_id");
+if (canshu==1) {
+	var script = document.createElement("script");
+        script.type="text/javascript";
+        script.src="skin_olddoor.js";
+        document.body.appendChild(script);
+	var link = document.createElement("link");
+        link.type="text/css";
+        link.href="skin_olddoor.css";
+        link.rel="stylesheet";
+        document.body.appendChild(link);
+}
+
+else if (canshu==2) {
+	var script = document.createElement("script");
+        script.type="text/javascript";
+        script.src="skin_2_year_building.js";
+        document.body.appendChild(script);
+
+	var link = document.createElement("link");
+        link.type="text/css";
+        link.href="skin_2_year_building.css";
+        link.rel="stylesheet";
+        document.body.appendChild(link);
+}
+
+else{
+    alert("皮肤文件获取失败，请联系网站管理员!\n错误码:skin_id="+canshu+"\n----------------\n已经自动选择skin_id=1\n皮肤名字为老式游乐场大门\n皮肤文件为skin_olddoor.js\n皮肤样式为skin_olddoor.css\n");
+
+	var script = document.createElement("script");
+        script.type="text/javascript";
+        script.src="skin_olddoor.js";
+        document.body.appendChild(script);
+	var link = document.createElement("link");
+        link.type="text/css";
+        link.href="skin_olddoor.css";
+        link.rel="stylesheet";
+        document.body.appendChild(link);
+}
 </script>
 
 <div id="sssurl">
