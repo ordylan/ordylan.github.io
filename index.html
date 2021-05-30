@@ -1,8 +1,16 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-
-
+ <script>
+var ua = navigator.userAgent;
+var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+isIphone =!ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+isMobile = isIphone || isAndroid;
+if(isMobile){
+ alert("已检测到你在手机访问网站，当你点击非按钮区域并没有进入网站时，可以在服务器列表登录网站!!!");
+}
+</script>
     <meta charset="utf-8">
     <title>橙子网_橙鸭乐园</title>
 <!--可以按浏览器语言来选择根目录的东东-->
@@ -65,6 +73,70 @@ var _hmt = _hmt || [];
 	
 </head>
 <body>
+
+
+<a id="loggg"  href = "javascript:void(0);" onclick = "delayURL('https://ordylan.github.io/mainpage/index.html',3250);document.getElementById('huanpifu').style.display='none';document.getElementById('xzfwq').style.display='none';document.getElementById('tz').style.display='none';document.getElementById('fangwuchu').style.display='block';document.getElementById('stz1').style.display='block';document.getElementById('stz000').style.display='block';">
+    <div id="dragonBonesPlayer" style="margin: auto;width: 100%;height: 100%;">
+        <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+            data-entry-class="Main"
+            data-orientation="landscape"
+            data-scale-mode="exactFit"
+            data-frame-rate="30"
+            data-content-width="1136"
+            data-content-height="640"
+            data-show-paint-rect="false"
+            data-multi-fingered="2"
+            data-show-fps="false" data-show-log="false"
+            data-show-fps-style="x:0,y:0,size:10,textColor:0xffffff,bgAlpha:0.9">
+        </div>
+</div></a>
+ 
+<!--<div>
+ <img id="odpg" src="logo.png" alt="橙鸭乐园">
+</div>
+<div id="mtz">
+<a href = "https://ordylan.github.io/mainpage/index.html">已检测到你在手机访问网站，当你点击非按钮区域并没有进入网站时，可以点这段话进入网站。</a>
+</div>-->
+
+ <div style=" border:3px solid #FFA500" id="xzfwq">
+<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">繁忙-网页山谷</a> 
+</div>
+
+<div id="tz">
+<a href = "javascript:void(0)" onclick = "document.getElementById('tongzhi').style.display='block';document.getElementById('fade').style.display='block'">网页<br>公告</a>
+</div>
+
+<div id="huanpifu">
+	<a href = "javascript:void(0)" onclick = "document.getElementById('pifu').style.display='block';document.getElementById('fade').style.display='block'">换皮肤</a>
+</div> 
+<div id="xiazaibig">
+<a href = "https://ordylan.github.io/mainpage/index.html"><p>正在缓存动画资源<br>不想看动画的可以点击这些文字跳过</p></a>
+<div id="xiazaismall">
+>动画canvas代码及图片(base64加密后的)<br>
+<· DOWNLOAD<br>
+>动画的5个运行库(js)<br>
+<·&nbsp;&nbsp;COMPLETE<br>
+>通知图片2ndlogo.gif<br>
+<·&nbsp;&nbsp;COMPLETE<br>
+>百度统计js<br>
+<·&nbsp;&nbsp;COMPLETE<br>
+>通知按钮图片btn_text2.png<br>
+<·&nbsp;&nbsp;COMPLETE<br>
+>登录网页时防止点而切换动画的遮挡层toumbtn.png<br>
+<·&nbsp;&nbsp;COMPLETE<br>
+>服务器列表servers.js<br>
+<·&nbsp;&nbsp;COMPLETE<br>
+>控制台彩蛋画log.js<br>
+<·&nbsp;&nbsp;COMPLETE<br>
+>电脑样式ordylanlogin.css<br>
+<·&nbsp;&nbsp;COMPLETE<br>
+>手机样式ordylanloginm.css<br>
+<·&nbsp;&nbsp;COMPLETE<br
+>检测浏览器语言并匹配最佳服务器<br>
+<·&nbsp;&nbsp;GITEE<br>
+</div>
+</div>
+
 <script>
 //获得参数的方法
 var request =
@@ -116,70 +188,6 @@ else{
 
 
 
-<a id="loggg"  href = "javascript:void(0);" onclick = "delayURL('https://ordylan.github.io/mainpage/index.html',3250);document.getElementById('huanpifu').style.display='none';document.getElementById('xzfwq').style.display='none';document.getElementById('tz').style.display='none';document.getElementById('fangwuchu').style.display='block';document.getElementById('stz1').style.display='block';document.getElementById('stz000').style.display='block';">
-    <div id="dragonBonesPlayer" style="margin: auto;width: 100%;height: 100%;">
-        <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
-            data-entry-class="Main"
-            data-orientation="landscape"
-            data-scale-mode="exactFit"
-            data-frame-rate="30"
-            data-content-width="1136"
-            data-content-height="640"
-            data-show-paint-rect="false"
-            data-multi-fingered="2"
-            data-show-fps="false" data-show-log="false"
-            data-show-fps-style="x:0,y:0,size:10,textColor:0xffffff,bgAlpha:0.9">
-        </div>
-</div></a>
-
-<!--
-<div>
- <img id="odpg" src="logo.png" alt="橙鸭乐园">
-</div>-->
-
-
-<div id="mtz">
-<a href = "https://ordylan.github.io/mainpage/index.html">已检测到你在手机访问网站，当你点击非按钮区域并没有进入网站时，可以点这段话进入网站。</a>
-</div>
-
- <div style=" border:3px solid #FFA500" id="xzfwq">
-<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">繁忙-网页山谷</a> 
-</div>
-
-<div id="tz">
-<a href = "javascript:void(0)" onclick = "document.getElementById('tongzhi').style.display='block';document.getElementById('fade').style.display='block'">网页<br>公告</a>
-</div>
-
-<div id="huanpifu">
-	<a href = "javascript:void(0)" onclick = "document.getElementById('pifu').style.display='block';document.getElementById('fade').style.display='block'">换皮肤</a>
-</div> 
-<div id="xiazaibig">
-<a href = "https://ordylan.github.io/mainpage/index.html"><p>正在缓存动画资源<br>不想看动画的可以点击这些文字跳过</p></a>
-<div id="xiazaismall">
->动画canvas代码及图片(base64加密后的)<br>
-<· DOWNLOAD<br>
->动画的5个运行库(js)<br>
-<·&nbsp;&nbsp;COMPLETE<br>
->通知图片2ndlogo.gif<br>
-<·&nbsp;&nbsp;COMPLETE<br>
->百度统计js<br>
-<·&nbsp;&nbsp;COMPLETE<br>
->通知按钮图片btn_text2.png<br>
-<·&nbsp;&nbsp;COMPLETE<br>
->登录网页时防止点而切换动画的遮挡层toumbtn.png<br>
-<·&nbsp;&nbsp;COMPLETE<br>
->服务器列表servers.js<br>
-<·&nbsp;&nbsp;COMPLETE<br>
->控制台彩蛋画log.js<br>
-<·&nbsp;&nbsp;COMPLETE<br>
->电脑样式ordylanlogin.css<br>
-<·&nbsp;&nbsp;COMPLETE<br>
->手机样式ordylanloginm.css<br>
-<·&nbsp;&nbsp;COMPLETE<br
->检测浏览器语言并匹配最佳服务器<br>
-<·&nbsp;&nbsp;GITEE<br>
-</div>
-</div>
 
 <div id="stz1" style="display: none">
 服务器提示文字~~~~~
@@ -305,6 +313,7 @@ else{
 
 			<ul class="content" style="padding: 10px;">
 <li>
+<a href = "https://ordylan.github.io/mainpage/index.html">GH服务器备用按钮</a>
 <div id="s" style=" border:2px solid #FFA500"><a href="javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none';window.onload  = function() {document.getElementById("loggg").onclick = function() 
 {alert(1)}}" id="s1">-服务器速度-<br>好听的名字<br>(简要描述)</a></div>
 <div id="s" style=" border:2px solid #FFA500"><a href="javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none';window.onload  = function() {document.getElementById("loggg").onclick = function() 
