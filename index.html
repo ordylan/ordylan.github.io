@@ -1,20 +1,11 @@
 <!DOCTYPE HTML>
 <html>
 <head>
- <script>
-var ua = navigator.userAgent;
-var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
-isIphone =!ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
-isAndroid = ua.match(/(Android)\s+([\d.]+)/),
-isMobile = isIphone || isAndroid;
-if(isMobile){
- alert("已检测到你在手机访问网站，当你点击非按钮区域并没有进入网站时，可以在服务器列表登录网站!!!");
-}
-</script>
+ 
     <meta charset="utf-8">
     <title>橙子网_橙鸭乐园</title>
 <!--可以按浏览器语言来选择根目录的东东-->
-<base href="https://ordylan.gitee.io/logos/ghmainpageres/" en="https://ordylan.github.io/" zh="https://ordylan.gitee.io/logos/ghmainpageres/"/>
+<!--<base href="https://ordylan.gitee.io/logos/ghmainpageres/" en="https://ordylan.github.io/" zh="https://ordylan.gitee.io/logos/ghmainpageres/"/>
 
     <script>
         var base = document.getElementsByTagName("base")[0];
@@ -25,12 +16,19 @@ if(isMobile){
         else {
             base.href = base.getAttribute("zh");
         }
-    </script>
+    </script>-->
 <!--可以按浏览器语言来选择根目录的东东-->
 <link rel="stylesheet" href="main.css" type="text/css">
 <!--<link rel="stylesheet" href="ordylanloginm.css" type="text/css" media="screen and (max-device-width:1024px) and (orientation:portrait)" >-->
 
     <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+	<script egret="lib" src="libs/egret.min.js"></script>
+	<script egret="lib" src="libs/egret.web.min.js"></script>
+	<script egret="lib" src="libs/promise.min.js"></script>
+	<script egret="lib" src="libs/dragonBones.min.js"></script>
+	<script egret="lib" src="libs/main.min.js"></script>
+
+
 <!--彩蛋画-->
 <script type="text/javascript" src="js/log.js"></script>
 <script>
@@ -136,7 +134,16 @@ var _hmt = _hmt || [];
 <·&nbsp;&nbsp;GITEE<br>
 </div>
 </div>
-
+<script>
+var ua = navigator.userAgent;
+var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+isIphone =!ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+isMobile = isIphone || isAndroid;
+if(isMobile){
+ alert("已检测到你在手机访问网站，当你点击非按钮区域并没有进入网站时，可以在服务器列表登录网站!!!");
+}
+</script>
 <script>
 //获得参数的方法
 var request =
@@ -166,7 +173,7 @@ else if (canshu==2) {
 
 	var link = document.createElement("link");
         link.type="text/css";
-        link.href="skin_2_year_building.css";skin_olddoor
+        link.href="skin_2_year_building.css";
         link.rel="stylesheet";
         document.body.appendChild(link);
 }
@@ -251,19 +258,19 @@ else{
 	</div> </div> 
 
 <div id="pifu" class="white_content">
+<a href = "javascript:void(0)" onclick = "document.getElementById('pifu').style.display='none';document.getElementById('fade').style.display='none'">我不换了</a>
+<br>
 <div style=" border:2px solid #FFA500">
 <img id="skinimg" src="skin_olddoor.PNG" alt="skin_olddoor">
 <p>皮肤-老式游乐场大门</p>
-<a id="hdurl" href="https://ordylan.github.io/index.html?skin_id=1">换它</a>
+<a id="hdurl" href="?skin_id=1">换它</a>
 </div> 
-
 
 <div style=" border:2px solid #FFA500">
 <img id="skinimg" src="skin_2_year_building.png" alt="skin_2_year_building">
 <p>皮肤-2周年大楼</p>
-<a id="hdurl" href="https://ordylan.github.io/index.html?skin_id=2">换它</a>
+<a id="hdurl" href="?skin_id=2">换它</a>
 </div> 
-<br><a href = "javascript:void(0)" onclick = "document.getElementById('pifu').style.display='none';document.getElementById('fade').style.display='none'">我不换了</a>
 	</div> 
 
 <div id="light" class="white_content">
@@ -388,12 +395,6 @@ else{
 <script type="text/javascript" src="servers.js"></script>
 
 
-
-	<script egret="lib" src="libs/egret.min.js"></script>
-	<script egret="lib" src="libs/egret.web.min.js"></script>
-	<script egret="lib" src="libs/promise.min.js"></script>
-	<script egret="lib" src="libs/dragonBones.min.js"></script>
-	<script egret="lib" src="libs/main.min.js"></script>
 
 
 
