@@ -1,9 +1,8 @@
 <!DOCTYPE HTML>
 <html>
 <head>
- 
     <meta charset="utf-8">
-    <title>橙子网_橙鸭乐园</title>
+    <title>橙子网_橙鸭乐园[v5.3.2]</title>
 <!--可以按浏览器语言来选择根目录的东东-->
 <base href="https://ordylan.gitee.io/logos/ghmainpageres/" en="https://ordylan.github.io/" zh="https://ordylan.gitee.io/logos/ghmainpageres/"/>
 
@@ -61,7 +60,7 @@ var _hmt = _hmt || [];
 <meta name="baidu-site-verification" content="as1UaycGio" />
 <meta name="google-site-verification" content="kmYdJQb_21LSNukp2Cm8yw9qCigHCdiHNKoJUD8dtlA" />
 <meta name="360-site-verification" content="083a2ed06b3b83c247cb24e71caf595d" />
-
+ <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
 
 	
 </head>
@@ -334,6 +333,12 @@ var _hmt = _hmt || [];
 <script type="text/javascript" src="servers.js"></script>
 
 <script>
+var request =
+{QueryString : function(val){
+var uri = window.location.search;
+var re = new RegExp("" +val+ "=([^&?]*)", "ig");
+return ((uri.match(re))?(uri.match(re)[0].substr(val.length+1)):null);}}
+var canshu = request.QueryString("skin_id");
    var aObj = document.getElementById("csxgq");
     aObj.href = "index.html?skin_id="+canshu;
 </script>
@@ -348,12 +353,7 @@ if(isMobile){
 }
 </script>
 <script>
-var request =
-{QueryString : function(val){
-var uri = window.location.search;
-var re = new RegExp("" +val+ "=([^&?]*)", "ig");
-return ((uri.match(re))?(uri.match(re)[0].substr(val.length+1)):null);}}
-var canshu = request.QueryString("skin_id");
+
 if (canshu==1) {
 	var script = document.createElement("script");
         script.type="text/javascript";
@@ -417,5 +417,11 @@ HAHA图片代码
     <script type="text/javascript">
 document.getElementById('xiazaibig').style.display='none';
     </script>
+<canvas id="Canvas"></canvas>
+<script>
+if (!document.getElementById("Canvas").getContext){
+alert("浏览器不支持canvas动画，请在加载完成之后点击服务器名字后弹出的小窗口里面选择备用按钮即可登录网站");
+}
+</script>
 </body>
 </html>
