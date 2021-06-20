@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>橙子网_橙鸭乐园[v5.3.2]</title>
+    <title>橙子网_橙鸭乐园[v5.4.1]</title>
 <!--可以按浏览器语言来选择根目录的东东-->
 <base href="https://ordylan.gitee.io/logos/ghmainpageres/" en="https://ordylan.github.io/" zh="https://ordylan.gitee.io/logos/ghmainpageres/"/>
 
@@ -204,6 +204,13 @@ var _hmt = _hmt || [];
 <p>皮肤-2周年大楼</p>
 <a id="hdurl" href="?skin_id=2">换它</a>
 </div> 
+
+
+<div style=" border:2px solid #FFA500">
+<img id="skinimg" src="skin_flyboat.png" alt="skin_flyboat">
+<p>皮肤-橙标飞船</p>
+<a id="hdurl" href="?skin_id=3">换它</a>
+</div> 
 	</div> 
 
 <div id="light" class="white_content">
@@ -378,7 +385,18 @@ else if (canshu==2) {
         link.rel="stylesheet";
         document.body.appendChild(link);
 }
+else if (canshu==3) {
+	var script = document.createElement("script");
+        script.type="text/javascript";
+        script.src="skin_flyboat.js";
+        document.body.appendChild(script);
 
+	var link = document.createElement("link");
+        link.type="text/css";
+        link.href="skin_flyboat.css";
+        link.rel="stylesheet";
+        document.body.appendChild(link);
+}
 else{
     alert("皮肤文件获取失败，请联系网站管理员!\n错误码:skin_id="+canshu+"\n----------------\n已经自动选择skin_id=1\n皮肤名字为老式游乐场大门\n皮肤文件为skin_olddoor.js\n皮肤样式为skin_olddoor.css\n");
 
@@ -417,11 +435,11 @@ HAHA图片代码
     <script type="text/javascript">
 document.getElementById('xiazaibig').style.display='none';
     </script>
-<canvas id="Canvas"></canvas>
-<script>
+
+<!--<script>
 if (!document.getElementById("Canvas").getContext){
 alert("浏览器不支持canvas动画，请在加载完成之后点击服务器名字后弹出的小窗口里面选择备用按钮即可登录网站");
-}
+}-->
 </script>
 </body>
 </html>
