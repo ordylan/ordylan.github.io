@@ -2,7 +2,7 @@
 document.getElementById("ver").innerHTML="Ver.5.4.3";
 //fullver1升级公告
 var hhh = document.getElementById('fullver1');
-	hhh.innerHTML ='Ver.5.4.3(TIME:1624541485)<br>1.使用时间戳(秒)记录升级时间。比如946656000就是2000-01-01 00:00:00。<br>2.116647574400就是橙鸭的生日~<br>------------------<br>\
+	hhh.innerHTML ='Ver.5.4.3(TIME:1624541485)<br>1.使用时间戳(秒)记录升级时间。比如946656000就是2000-01-01 00:00:00。<br>2.116647574400就是橙鸭的生日~Math.round(new Date() / 1000)3.js获取现在时间戳Math.round(new Date() / 1000)<br>------------------<br>\
 Ver.5.4.2(TIME:1624540764)<br>1.添加了版本号页面.<br>2.优化了版本号的展示<br>------------------<br>\
 Ver.5.4.1(TIME:未知)<br>1.优化皮肤展示形式.<br>------------------<br>\
 Ver.5.4.0(TIME:未知)<br>1.添加了flyboat皮肤.<br>------------------<br>\
