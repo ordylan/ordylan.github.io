@@ -52,3 +52,28 @@ overflow:scroll;
 img#skinimg {
 height: 200px;
 }
+
+
+div#ver {
+  position: absolute;
+  top:90vh;
+left: 2vw;
+color:#222222;
+font-weight:bold;
+font-size: 4.5vw;
+}
+
+@media screen and (max-width: 960px){
+  /* 手机端CSS代码 */
+
+div#ver {
+-webkit-transform: rotate(90deg);/*Safari 4+,Google Chrome 1+ */
+-moz-transform: rotate(90deg);/*Firefox 3.5+*/
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);/*ie*/
+  position:absolute;
+  top:6vh;
+ left:3vw;
+
+}
+
+}
