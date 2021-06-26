@@ -1,6 +1,16 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<script>
+var request =
+{QueryString : function(val){
+var uri = window.location.search;
+var re = new RegExp("" +val+ "=([^&?]*)", "ig");
+return ((uri.match(re))?(uri.match(re)[0].substr(val.length+1)):null);}}
+var canshu = request.QueryString("skin_id");
+var sid = request.QueryString("server_id");
+</script>
+
     <meta charset="utf-8">
     <title>橙子网_橙鸭乐园</title>
 <!--可以按浏览器语言来选择根目录的东东-->
@@ -67,7 +77,7 @@ var _hmt = _hmt || [];
 <body>
 
 
-<a id="loggg"  href = "javascript:void(0);" onclick = "delayURL('https://ordylan.github.io/mainpage/index.html',3250);document.getElementById('huanpifu').style.display='none';document.getElementById('xzfwq').style.display='none';document.getElementById('tz').style.display='none';document.getElementById('fangwuchu').style.display='block';document.getElementById('stz1').style.display='block';document.getElementById('stz000').style.display='block';">
+<a id="loggg"  href = "javascript:loogin()">
     <div id="dragonBonesPlayer" style="margin: auto;width: 100%;height: 100%;">
         <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
             data-entry-class="Main"
@@ -91,7 +101,7 @@ var _hmt = _hmt || [];
 </div>-->
 
  <div style=" border:3px solid #FFA500" id="xzfwq">
-<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">繁忙-网页山谷</a> 
+<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" id="sname">繁忙-网页山谷</a> 
 </div>
 
 <div id="tz">
@@ -212,26 +222,26 @@ var _hmt = _hmt || [];
 <div style=" border:2px solid #FFA500">
 <img id="skinimg" src="skin_olddoor.PNG" alt="skin_olddoor">
 <p>皮肤-老式游乐场大门</p>
-<a id="hdurl" href="?skin_id=1">换它</a>
+<a id="hdurl" href="javascript:pf1()">换它</a>
 </div> 
 
 <div style=" border:2px solid #FFA500">
 <img id="skinimg" src="skin_2_year_building.png" alt="skin_2_year_building">
 <p>皮肤-2周年大楼</p>
-<a id="hdurl" href="?skin_id=2">换它</a>
+<a id="hdurl" href="javascript:pf2()">换它</a>
 </div> 
 
 
 <div style=" border:2px solid #FFA500">
 <img id="skinimg" src="skin_flyboat.png" alt="skin_flyboat">
 <p>皮肤-橙标飞船</p>
-<a id="hdurl" href="?skin_id=3">换它</a>
+<a id="hdurl" href="javascript:pf3()">换它</a>
 </div> 
 	</div> 
 
 <div id="light" class="white_content">
 
-		<h2>服务器列表-没有可以换的服务器</h2>
+		<h2>服务器列表2.0</h2>
 
 		 <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">关闭窗口</a>
 <!-- 新服务器列表-->
@@ -273,33 +283,26 @@ var _hmt = _hmt || [];
 				
 				<li id="x3">项名字</li>
 			</ul>
-
-			<ul class="content" style="padding: 10px;">
+<ul class="content" style="padding: 10px;">
 <li>
 <a href = "https://ordylan.github.io/mainpage/index.html">GH服务器备用按钮</a>
-<div id="s" style=" border:2px solid #FFA500"><a href="javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none';window.onload  = function() {document.getElementById("loggg").onclick = function() 
-{alert(1)}}" id="s1">-服务器速度-<br>好听的名字<br>(简要描述)</a></div>
-<div id="s" style=" border:2px solid #FFA500"><a href="javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none';window.onload  = function() {document.getElementById("loggg").onclick = function() 
-{alert(1)}}" id="s2">-服务器速度-<br>好听的名字<br>(简要描述)</a></div></li>
+<div id="s" style=" border:2px solid #FFA500"><a href="javascript:ss1()" id="s1">-服务器速度-<br>好听的名字<br>(简要描述)</a></div>
+<div id="s" style=" border:2px solid #FFA500"><a href="javascript:ss2()" id="s2">-服务器速度-<br>好听的名字<br>(简要描述)</a></div>
+</li>
 
 <li style="display: none;">
-<div id="s" style=" border:2px solid #FFA500"><a href="javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none';window.onload  = function() {document.getElementById("loggg").onclick = function() 
-{alert(1)}}" id="s3">-服务器速度-<br>好听的名字<br>(简要描述)</a></div>
-<div id="s" style=" border:2px solid #FFA500"><a href="javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none';window.onload  = function() {document.getElementById("loggg").onclick = function() 
-{alert(1)}}" id="s4">-服务器速度-<br>好听的名字<br>(简要描述)</a></div>
-<div id="s" style=" border:2px solid #FFA500"><a href="javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none';window.onload  = function() {document.getElementById("loggg").onclick = function() 
-{alert(1)}}" id="s5">-服务器速度-<br>好听的名字<br>(简要描述)</a></div>
-<div id="s" style=" border:2px solid #FFA500"><a href="javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none';window.onload  = function() {document.getElementById("loggg").onclick = function() 
-{alert(1)}}" id="s6">-服务器速度-<br>好听的名字<br>(简要描述)</a></div></li>
-				
-
-<div id="s" style=" border:2px solid #FFA500"><a href="javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none';window.onload  = function() {document.getElementById("loggg").onclick = function() 
-{alert(1)}}" id="s7">-服务器速度-<br>好听的名字<br>(简要描述)</a></div>
-<div id="s" style=" border:2px solid #FFA500"><a href="javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none';window.onload  = function() {document.getElementById("loggg").onclick = function() 
-{alert(1)}}" id="s8">-服务器速度-<br>好听的名字<br>(简要描述)</a></div></div>
+<div id="s" style=" border:2px solid #FFA500"><a href="javascript:ss3()" id="s3">-服务器速度-<br>好听的名字<br>(简要描述)</a></div>
+<div id="s" style=" border:2px solid #FFA500"><a href="javascript:ss4()" id="s4">-服务器速度-<br>好听的名字<br>(简要描述)</a></div>
+<div id="s" style=" border:2px solid #FFA500"><a href="javascript:ss5()" id="s5">-服务器速度-<br>好听的名字<br>(简要描述)</a></div>
+<div id="s" style=" border:2px solid #FFA500"><a href="javascript:ss6()" id="s6">-服务器速度-<br>好听的名字<br>(简要描述)</a></div>
 </li>
-			</ul>
-		</div>
+
+<li style="display: none;">
+<div id="s" style=" border:2px solid #FFA500"><a href="javascript:ss7()" id="s7">-服务器速度-<br>好听的名字<br>(简要描述)</a></div>
+<div id="s" style=" border:2px solid #FFA500"><a href="javascript:ss8()" id="s8">-服务器速度-<br>好听的名字<br>(简要描述)</a></div></div>
+</li>
+</ul>
+</div>
 
 <script>
 			let title = document.getElementsByClassName('title')[0]
@@ -354,16 +357,10 @@ var _hmt = _hmt || [];
 出错了?返回上一页~~~
 </div></a>
 <script type="text/javascript" src="servers.js"></script>
-
+ 
 <script>
-var request =
-{QueryString : function(val){
-var uri = window.location.search;
-var re = new RegExp("" +val+ "=([^&?]*)", "ig");
-return ((uri.match(re))?(uri.match(re)[0].substr(val.length+1)):null);}}
-var canshu = request.QueryString("skin_id");
    var aObj = document.getElementById("csxgq");
-    aObj.href = "index.html?skin_id="+canshu;
+    aObj.href = "index.html?skin_id="+canshu+"&server_id="+sid;
 </script>
 <script>
 var ua = navigator.userAgent;
@@ -375,8 +372,24 @@ if(isMobile){
  alert("已检测到你在手机访问网站，当你点击非按钮区域并没有进入网站时，可以在服务器列表登录网站!!!");
 }
 </script>
-<script>
 
+<script>
+if (sid==1) {document.getElementById("sname").innerHTML="繁忙-网页山谷";}
+else if (sid==2) {document.getElementById("sname").innerHTML="后台-阿得梦山脉";}
+else if (sid==3) {document.getElementById("sname").innerHTML="繁忙-网页山谷";}
+else if (sid==4) {document.getElementById("sname").innerHTML="爆满-代码小镇";}
+else if (sid==5) {document.getElementById("sname").innerHTML="维护-网页山谷";}
+else if (sid==6) {document.getElementById("sname").innerHTML="内服-优若雪山";}
+else if (sid==7) {document.getElementById("sname").innerHTML="空闲-电脑集市";}
+else if (sid==8) {document.getElementById("sname").innerHTML="下载-注释沼泽";}
+
+else{
+alert("不存在的服务器.\n错误码:server_id="+sid+"\n已自动选择server_id=1");
+document.getElementById("sname").innerHTML="繁忙-网页山谷";
+}
+</script>
+
+<script>
 if (canshu==1) {
 	var script = document.createElement("script");
         script.type="text/javascript";
@@ -414,7 +427,7 @@ else if (canshu==3) {
         document.body.appendChild(link);
 }
 else{
-    alert("皮肤文件获取失败，请联系网站管理员!\n错误码:skin_id="+canshu+"\n----------------\n已经自动选择skin_id=1\n皮肤名字为老式游乐场大门\n皮肤文件为skin_olddoor.js\n皮肤样式为skin_olddoor.css\n");
+    alert("皮肤文件获取失败，请联系网站管理员!\n错误码:skin_id="+canshu+"\n----------------\n已经自动选择skin_id=1");
 
 	var script = document.createElement("script");
         script.type="text/javascript";
@@ -428,31 +441,73 @@ else{
 }
 </script>
 
-<div id="sssurl">
+<script>
+function loogin(){
+if (sid==1) {
+delayURL('https://ordylan.github.io/mainpage/index.html',3200);document.getElementById('huanpifu').style.display='none';document.getElementById('xzfwq').style.display='none';document.getElementById('tz').style.display='none';document.getElementById('fangwuchu').style.display='block';document.getElementById('stz1').style.display='block';document.getElementById('stz000').style.display='block';}
 
-</div>
-<div style="display: none">
-<b id="data"></b>
-HAHA图片代码
-</div>
+else if (sid==2) {
+delayURL('#',3200);document.getElementById('huanpifu').style.display='none';document.getElementById('xzfwq').style.display='none';document.getElementById('tz').style.display='none';document.getElementById('fangwuchu').style.display='block';document.getElementById('stz2').style.display='block';document.getElementById('stz000').style.display='block';}
+
+else if (sid==3) {
+delayURL('https://ordylan.github.io/mainpage/index.html',3200);document.getElementById('huanpifu').style.display='none';document.getElementById('xzfwq').style.display='none';document.getElementById('tz').style.display='none';document.getElementById('fangwuchu').style.display='block';document.getElementById('stz3').style.display='block';document.getElementById('stz000').style.display='block';}
+
+else if (sid==4) {
+delayURL('#',3200);document.getElementById('huanpifu').style.display='none';document.getElementById('xzfwq').style.display='none';document.getElementById('tz').style.display='none';document.getElementById('fangwuchu').style.display='block';document.getElementById('stz4').style.display='block';document.getElementById('stz000').style.display='block';}
+
+else if (sid==5) {
+delayURL('#',3200);document.getElementById('huanpifu').style.display='none';document.getElementById('xzfwq').style.display='none';document.getElementById('tz').style.display='none';document.getElementById('fangwuchu').style.display='block';document.getElementById('stz5').style.display='block';document.getElementById('stz000').style.display='block';}
+
+else if (sid==6) {
+delayURL('#',3200);document.getElementById('huanpifu').style.display='none';document.getElementById('xzfwq').style.display='none';document.getElementById('tz').style.display='none';document.getElementById('fangwuchu').style.display='block';document.getElementById('stz6').style.display='block';document.getElementById('stz000').style.display='block';}
+
+else if (sid==7) {
+delayURL('../ordylan/win/index.html',3200);document.getElementById('huanpifu').style.display='none';document.getElementById('xzfwq').style.display='none';document.getElementById('tz').style.display='none';document.getElementById('fangwuchu').style.display='block';document.getElementById('stz7').style.display='block';document.getElementById('stz000').style.display='block';}
+
+else if (sid==8) {
+delayURL('#',3200);document.getElementById('huanpifu').style.display='none';document.getElementById('xzfwq').style.display='none';document.getElementById('tz').style.display='none';document.getElementById('fangwuchu').style.display='block';document.getElementById('stz8').style.display='block';document.getElementById('stz000').style.display='block';}
+else{
+delayURL('https://ordylan.github.io/mainpage/index.html',3200);document.getElementById('huanpifu').style.display='none';document.getElementById('xzfwq').style.display='none';document.getElementById('tz').style.display='none';document.getElementById('fangwuchu').style.display='block';document.getElementById('stz1').style.display='block';document.getElementById('stz000').style.display='block';}}
+</script>
+<script>
+function ss1() {window.location.href="index.html?skin_id="+canshu+"&server_id=1";}
+function ss2() {window.location.href="index.html?skin_id="+canshu+"&server_id=2";}
+function ss3() {window.location.href="index.html?skin_id="+canshu+"&server_id=3";}
+function ss4() {window.location.href="index.html?skin_id="+canshu+"&server_id=4";}
+function ss5() {window.location.href="index.html?skin_id="+canshu+"&server_id=5";}
+function ss6() {window.location.href="index.html?skin_id="+canshu+"&server_id=6";}
+function ss7() {window.location.href="index.html?skin_id="+canshu+"&server_id=7";}
+function ss8() {window.location.href="index.html?skin_id="+canshu+"&server_id=8";}
+function pf1() {window.location.href="index.html?skin_id=1&server_id="+sid;}
+function pf2() {window.location.href="index.html?skin_id=2&server_id="+sid;}
+function pf3() {window.location.href="index.html?skin_id=3&server_id="+sid;}
+</script>
 
 
 
-	<script type="text/javascript">
+
+
+
+
+<div id="sssurl"></div>
+<div style="display: none"><b id="data">HAHA图片代码</b></div>
+<script type="text/javascript">
  function delayURL(url,time){
  setTimeout("top.location.href = '" + url + "'",time);
  }
 </script>
-   <script>
-		window.onload = function() {
+
+<script>
+	window.onload = function() {
             egret.runEgret({ renderMode: "webgl", audioType: 0 });
         }
-    </script>
+</script>
+
+<script type="text/javascript" src="ver.js"></script>
 
     <script type="text/javascript">
 document.getElementById('xiazaibig').style.display='none';
     </script>
-<script type="text/javascript" src="ver.js"></script>
 
 <!--可能使用的:浏览器不支持canvas动画，请在加载完成之后点击服务器名字后弹出的小窗口里面选择备用按钮即可登录网站"->
 </body>

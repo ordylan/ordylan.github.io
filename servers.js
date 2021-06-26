@@ -12,22 +12,6 @@ document.getElementById("s6").innerHTML="-内服-<br>优若雪山<br>(IIS)";
 document.getElementById("s7").innerHTML="-空闲-<br>电脑集市<br>(主站电脑版)";
 document.getElementById("s8").innerHTML="-下载-<br>注释沼泽<br>(橙子浏览器下载)";
 
-document.getElementById("s1").href="javascript:void(0)";
-
-document.getElementById("s2").href="javascript:void(0)";
-
-document.getElementById("s3").href="javascript:void(0)";
-
-document.getElementById("s4").href="javascript:void(0)";
-
-document.getElementById("s5").href="javascript:void(0)";
-
-document.getElementById("s6").href="javascript:void(0)";
-
-document.getElementById("s7").href="javascript:void(0)";
-
-document.getElementById("s8").href="javascript:void(0)";
-
 //活动
 document.getElementById("hdimg").alt="2周年庆典";
 document.getElementById("hdimg").src="https://ordylan.gitee.io/logos/2ndlogo.gif";
@@ -37,7 +21,7 @@ document.getElementById("hdms").innerHTML="橙子网2周年啦，庆典活动来
 
 
 document.getElementById("stz1").innerHTML="网页山谷欢迎您↑"; 
-document.getElementById("stz2").innerHTML="阿得梦山脉"; 
+document.getElementById("stz2").innerHTML="阿得梦山脉。怎么说呢，网页无意中删了...还是直接Git push吧~"; 
 document.getElementById("stz4").innerHTML="代码小镇服务器(错误)!"; 
 document.getElementById("stz5").innerHTML="元素王国服务器正在维护!"; 
 document.getElementById("stz6").innerHTML="很抱歉，你目前无法访问此服务器"; 
