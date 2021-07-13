@@ -49,6 +49,22 @@ text-align:left;
 overflow:scroll;
 }
 
+
+
+
+div#noscript {
+  position: absolute;
+  top:2vh;
+left: 2vw;
+width:  95%;
+height: 95%;
+background:#000000;
+color:#FFFFFF;
+text-align:left;
+font-weight:bold;
+font-size: 10vw;
+}
+
 img#skinimg {
 height: 200px;
 }
