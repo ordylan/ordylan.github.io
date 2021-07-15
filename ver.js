@@ -1,5 +1,6 @@
 //ver版本号
-var vvv ="5.5.0.22"
+var vvv ="5.5.1.3"
+
 var hh = document.getElementById('ver');
 hh.innerHTML ='V.'+vvv+'<div class="ssss"></div>';
 

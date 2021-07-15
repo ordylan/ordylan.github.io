@@ -510,10 +510,13 @@ function pf3() {window.location.href="index.html?skin_id=3&server_id="+sid;}
         }
 </script>
 
-<script type="text/javascript" src="ver.js"></script>
+<script type="text/javascript"> 
+document.write("<script type='text/javascript' src='ver.js?v="+new Date().getTime()+"'>");  
+</script>
+</script>
 
     <script type="text/javascript">
-document.getElementById('xiazaibig').style.display='none';
+    document.getElementById('xiazaibig').style.display='none';
     </script>
 
 <!--可能使用的:浏览器不支持canvas动画，请在加载完成之后点击服务器名字后弹出的小窗口里面选择备用按钮即可登录网站"->
