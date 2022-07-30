@@ -1,4 +1,4 @@
-var geUrl="//a.ordylan.cn/t/1.html";
+var geUrl="//a.ordylan.cn/t/3.html";
 var xhr=new XMLHttpRequest;
 xhr.onload=function(){
 var onhash=window.onhashchange;
