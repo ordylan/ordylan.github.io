@@ -1,5 +1,9 @@
 <html><meta charset="utf-8" /><title>Loading</title><div>欢迎来到[橙鸭乐园]! 正在检票中～</div>
 <script>
+   function Domain(domain) {
+  var regex = /^([a-zA-Z0-9-]+\.)?a\.com$/;
+  return regex.test(domain);
+}
 var host = window.location.hostname;
 var path = window.location.pathname;
 //t.php引流|以后删
@@ -12,6 +16,10 @@ else if(host=="a.ordylan.cn"||host=="a.ordylan.com"){
   window.location.href="/ClosePages/CloseAK.html";
 //}
 }
+ //备案前用
+ else if(Domain("ordylan.com")){
+window.location.href="/ClosePages/ComingCom.html";
+ }
 //旧橙子网迁移
 else{window.location.href="https://ordylan.com"+path;
      //服务器过期时使用
