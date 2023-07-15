@@ -21,7 +21,16 @@ else if(host=="a.ordylan.cn"||host=="a.ordylan.com"){
 window.location.href="/ClosePages/ComingCom.html";
  }
 //旧橙子网迁移
-else{window.location.href="https://ordylan.com"+path;
+else{
+      var urlll = 'ordylan.com';
+   var targetDate = new Date('2023-08-01');
+var currentDate = new Date();
+if (currentDate < targetDate) {
+   urlll = 'ordylan.cn';
+}
+
+   
+   window.location.href="https://"+ urlll+path;
      //服务器过期时使用
  // window.location.href="/ClosePages/CloseGK.html";
     }
